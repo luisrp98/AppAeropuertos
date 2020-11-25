@@ -7,6 +7,9 @@ package appaeropuertos;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -21,7 +24,6 @@ public class Ventana4 extends javax.swing.JFrame {
 
     public Ventana4() {
         initComponents();
-        this.setPreferredSize(new Dimension(1000, 1000));
         this.setResizable(false);
         this.pack();
         jPanel1.setBackground(new Color(160, 160, 241));
@@ -45,6 +47,7 @@ public class Ventana4 extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1000, 595));
 
         jPanel1.setPreferredSize(new java.awt.Dimension(1000, 1000));
 
@@ -143,7 +146,12 @@ public class Ventana4 extends javax.swing.JFrame {
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
         // TODO add your handling code here:
-        Ventana3 tres = new Ventana3();
+        Ventana3 tres = null;
+        try {
+            tres = new Ventana3();
+        } catch (IOException ex) {
+            Logger.getLogger(Ventana4.class.getName()).log(Level.SEVERE, null, ex);
+        }
         tres.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton2MouseClicked

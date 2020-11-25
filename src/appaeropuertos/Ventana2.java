@@ -7,6 +7,9 @@ package appaeropuertos;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -21,7 +24,6 @@ public class Ventana2 extends javax.swing.JFrame {
 
     public Ventana2() {
         initComponents();
-        this.setPreferredSize(new Dimension(1000, 1000));
         this.setResizable(false);
         this.pack();
         jPanel1.setBackground(new Color(160, 160, 241));
@@ -41,11 +43,12 @@ public class Ventana2 extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new Logo();
-        jButton1 = new javax.swing.JButton();
+        Sig = new javax.swing.JButton();
         jPanel3 = new Mapa();
-        jButton2 = new javax.swing.JButton();
+        Atras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1000, 800));
 
         jPanel1.setPreferredSize(new java.awt.Dimension(1000, 1000));
 
@@ -62,15 +65,10 @@ public class Ventana2 extends javax.swing.JFrame {
             .addGap(0, 135, Short.MAX_VALUE)
         );
 
-        jButton1.setText("Siguiente");
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        Sig.setText("Siguiente");
+        Sig.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
-            }
-        });
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                SigMouseClicked(evt);
             }
         });
 
@@ -85,15 +83,10 @@ public class Ventana2 extends javax.swing.JFrame {
             .addGap(0, 575, Short.MAX_VALUE)
         );
 
-        jButton2.setText("Atras");
-        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+        Atras.setText("Atras");
+        Atras.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton2MouseClicked(evt);
-            }
-        });
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                AtrasMouseClicked(evt);
             }
         });
 
@@ -105,15 +98,14 @@ public class Ventana2 extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(23, 23, 23)
-                        .addComponent(jButton2))
+                        .addComponent(Atras))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(31, 31, 31)
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1)
+                        .addComponent(Sig)
                         .addGap(40, 40, 40))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
@@ -133,8 +125,8 @@ public class Ventana2 extends javax.swing.JFrame {
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(Sig)
+                    .addComponent(Atras))
                 .addGap(290, 290, 290))
         );
 
@@ -156,27 +148,29 @@ public class Ventana2 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void SigMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SigMouseClicked
+        try {
+            // TODO add your handling code here:
+            Ventana3 tres = new Ventana3();
+            tres.setVisible(true);
+            this.dispose();
+        } catch (IOException ex) {
+            Logger.getLogger(Ventana2.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_SigMouseClicked
 
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        // TODO add your handling code here:
-        Ventana3 tres = new Ventana3();
-        tres.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jButton1MouseClicked
+    private void AtrasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AtrasMouseClicked
+         //TODO add your handling code here:
+        Ventana1 uno;
+        try {
+            uno = new Ventana1();
+            uno.setVisible(true);
+            this.dispose();
+        } catch (IOException ex) {
+            Logger.getLogger(Ventana2.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
-    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-        // TODO add your handling code here:
-        Ventana1 uno = new Ventana1();
-        uno.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jButton2MouseClicked
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_AtrasMouseClicked
 
     /**
      * @param args the command line arguments
@@ -215,8 +209,8 @@ public class Ventana2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton Atras;
+    private javax.swing.JButton Sig;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
