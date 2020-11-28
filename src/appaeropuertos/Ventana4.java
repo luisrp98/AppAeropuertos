@@ -6,7 +6,6 @@
 package appaeropuertos;
 
 import java.awt.Color;
-import java.awt.Dimension;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -17,11 +16,10 @@ import java.util.logging.Logger;
  */
 public class Ventana4 extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Ventana1
-     */
+    //Clase de imagenes para la parte grafica
     Imagenes i = new Imagenes();
 
+    //Parte grafica
     public Ventana4() {
         initComponents();
         this.setResizable(false);
@@ -45,6 +43,7 @@ public class Ventana4 extends javax.swing.JFrame {
         jPanel2 = new Logo();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1000, 595));
@@ -88,6 +87,8 @@ public class Ventana4 extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setText("EN ESTA VENTANA AUN FALTAN COSAS");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -99,15 +100,22 @@ public class Ventana4 extends javax.swing.JFrame {
                 .addComponent(jButton1)
                 .addGap(40, 40, 40))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(359, 359, 359)
+                .addGap(39, 39, 39)
+                .addComponent(jLabel1)
+                .addGap(286, 286, 286)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(51, 51, 51)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(110, 110, 110)
+                        .addComponent(jLabel1)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 499, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
@@ -146,6 +154,7 @@ public class Ventana4 extends javax.swing.JFrame {
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
         // TODO add your handling code here:
+        //Llamammiento a la otra ventana
         Ventana3 tres = null;
         try {
             tres = new Ventana3();
@@ -205,6 +214,7 @@ public class Ventana4 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

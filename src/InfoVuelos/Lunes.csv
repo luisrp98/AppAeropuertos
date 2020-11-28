@@ -1,4 +1,512 @@
-Aeropuerto 1,100
-Aeropuerto 2,200
-Aeropuerto 3,300
-Aeropuerto 4,400
+Numero de vuelo,Aeropuerto salida,Aeropuerto llegada,Tiempo de vuelo,Hora de salida,Hora llegada
+VIV3337,A. I. Abraham González,A. I. Miguel Hidalgo y Costilla,1:50,21:49,lun 11:39PM CST
+VTM404,A. I. Abraham González,A. I. Plan de Guadalupe,1:18,20:39,lun 09:57PM CST
+VOI477,A. I. Abraham González,A. I. Gral. Abelardo L. Rodríguez,0:42,19:29,lun 08:11PM PDT
+SLI118,A. I. Abraham González,A. I. Benito Juárez,2:05,19:01,lun 09:06PM CST
+VOI241,A. I. Abraham González,A. I. Miguel Hidalgo y Costilla,1:50,18:40,lun 08:30PM CST
+AMX116,A. I. Abraham González,A. I. Benito Juárez,2:09,16:37,lun 06:46PM CST
+VIV4153,A. I. Abraham González,A. I. Gral. Mariano Escobedo,1:13,14:18,lun 03:31PM CST
+VIV1003,A. I. Abraham González,A. I. Benito Juárez,2:06,14:10,lun 04:16PM CST
+VOI279,A. I. Abraham González,A. I. Benito Juárez,2:00,13:37,lun 03:37PM CST
+SLI114,A. I. Abraham González,A. I. Benito Juárez,2:19,11:43,lun 02:02PM CST
+VOI481,A. I. Abraham González,A. I. Gral. Abelardo L. Rodríguez,0:51,10:14,lun 11:05AM PDT
+VIV9065,A. I. Abraham González,A. I. del Bajío,1:44,9:13,lun 10:57AM CST
+VIV3329,A. I. Abraham González,A. I. Miguel Hidalgo y Costilla,1:49,8:40,lun 10:29AM CST
+VOI849,A. I. Amado Nervo,A. I. Gral. Abelardo L. Rodríguez,2:36,15:13,05:38PM
+SLI8109,A. I. Angel Albino Corzo,A. I. Benito Juárez,1:07,6:31,Mon 07:38AM CST
+VOI773,A. I. Angel Albino Corzo,A. I. Benito Juárez,1:15,10:21,Mon 11:36AM CST
+SLI317,A. I. Angel Albino Corzo,A. I. Benito Juárez,1:16,11:17,Mon 12:33PM CST
+SLI8143,A. I. Angel Albino Corzo,A. I. Benito Juárez,1:15,11:17,Mon 12:32PM CST
+SLI8151,A. I. Angel Albino Corzo,A. I. Benito Juárez,1:15,14:20,Mon 03:35PM CST
+SLI319,A. I. Angel Albino Corzo,A. I. Benito Juárez,1:13,14:22,Mon 03:35PM CST
+VIV4197,A. I. Angel Albino Corzo,A. I. Gral. Mariano Escobedo,1:40,16:39,Mon 06:19PM CST
+SLI321,A. I. Angel Albino Corzo,A. I. Benito Juárez,1:13,16:19,Mon 07:32PM CST
+VIV1229,A. I. Angel Albino Corzo,A. I. Benito Juárez,1:03,23:22,Tue 12:25AM CST
+VIV1042,A. I. Benito Juárez,A. I. de Cancún,2:53,22:54,01:47 a. m.
+VOI858,A. I. Benito Juárez,A. I. Gral. Abelardo L. Rodríguez,1:59,22:47,12:46 a. m.
+VOI732,A. I. Benito Juárez,A. I. Miguel Hidalgo y Costilla,0:51,22:10,11:01 p. m.
+VIV1144,A. I. Benito Juárez,A. I. Gral. Mariano Escobedo,1:05,22:09,11:14 p. m.
+VIV1070,A. I. Benito Juárez,A. I. Miguel Hidalgo y Costilla,0:47,22:08,10:55 p. m.
+SLI2638,A. I. Benito Juárez,A. I. Lic. Jesús Terán Peredo,0:43,21:01,09:44 p. m.
+SLI8978,A. I. Benito Juárez,A. I. del Bajío,0:37,21:00,09:37 p. m.
+TAO909,A. I. Benito Juárez,A. I. Gral. Juan N. Álvarez,0:50,20:53,09:43 p. m.
+AIJ2188,A. I. Benito Juárez,A. I. Gral. Mariano Escobedo,1:12,20:09,09:21 p. m.
+AMX184,A. I. Benito Juárez,A. I. Gral. Abelardo L. Rodríguez,2:03,19:47,09:50 p. m.
+VIV1216,A. I. Benito Juárez,A. I. de Los Cabos,0:38,19:45,08:23 p. m.
+SLI8054,A. I. Benito Juárez,A. I. Manuel Crescencio Rejón,1:26,19:01,08:27 p. m.
+VIV1138,A. I. Benito Juárez,A. I. Gral. Mariano Escobedo,1:10,19:00,08:10 p. m.
+VIV1172,A. I. Benito Juárez,A. I. Lic. Gustavo Díaz Ordaz,1:01,19:04,07:55 p. m.
+SLI8983,A. I. Benito Juárez,A. I. Ponciano Arriaga,0:47,18:01,06:48 p. m.
+SLI374,A. I. Benito Juárez,A. I. de Tapachula,1:21,17:59,07:20 p. m.
+VOI136,A. I. Benito Juárez,A. I. Carlos Rovirosa Pérez,1:04,17:56,07:00 p. m.
+AMX188,A. I. Benito Juárez,A. I. Gral. Abelardo L. Rodríguez,2:02,17:52,07:54 p. m.
+SLI2418,A. I. Benito Juárez,A. I. Gral. Fco. Javier Mina,0:36,17:03,05:39 p. m.
+SLI342,A. I. Benito Juárez,A. I. Lic. Gustavo Díaz Ordaz,1:00,16:58,05:58 p. m.
+SLI164,A. I. Benito Juárez,A. I. Federal de Culiacán,0:32,16:51,05:23 p. m.
+VIV1024,A. I. Benito Juárez,A. I. de Cancún,2:59,16:02,07:01 p. m.
+SLI8984,A. I. Benito Juárez,A. I. de Minatitlán,0:52,16:00,04:52 p. m.
+VIV1066,A. I. Benito Juárez,A. I. Miguel Hidalgo y Costilla,0:52,15:39,04:51 p. m.
+AMX534,A. I. Benito Juárez,A. I. de Cancún,2:48,15:02,05:50 p. m.
+SLI144,A. I. Benito Juárez,A. I. Gral. Roberto Fierro Villalobos,0:47,14:58,03:45 p. m.
+SLI2132,A. I. Benito Juárez,A. I. Federal del Valle del Fuerte,0:53,14:49,03:42 p. m.
+SLI9099,A. I. Benito Juárez,A. I. Gral. Juan N. Álvarez,0:36,14:02,02:38 p. m.
+AMX526,A. I. Benito Juárez,A. I. de Cancún,2:52,13:03,03:54 p. m.
+SLI314,A. I. Benito Juárez,A. I. Ángel Albino Corzo,1:10,12:04,01:14 p. m.
+VIV1182,A. I. Benito Juárez,A. I. de Puerto Escondido,1:04,12:00,01:04 p. m.
+SLI2520,A. I. Benito Juárez,A. I. de Minatitlán,0:50,11:48,12:38 p. m.
+AMX826,A. I. Benito Juárez,A. I. Manuel Crescencio Rejón,1:23,11:05,12:28 p. m.
+VIV1240,A. I. Benito Juárez,A. I. Gral. Abelardo L. Rodríguez,1:58,11:04,01:02 p. m.
+SLI8160,A. I. Carlos Rovirosa Pérez,A. I. Benito Juárez ,1:28,7:08,08:12AM CST
+VIV4393,A. I. Carlos Rovirosa Pérez,A. I. Gral. Mariano Escobedo,1:36,9:23,10:59AM CST
+AMX8022,A. I. Carlos Rovirosa Pérez,A. I. Benito Juárez,1:17,12:15,01:10PM CST
+VIV3257,A. I. Carlos Rovirosa Pérez,A. I. Miguel Hidalgo y Costilla,1:31, 13:16,02:47PM CST
+AMX8980,A. I. Carlos Rovirosa Pérez,A. I. Benito Juárez ,1:22,16:20,05:24PM CST
+AMX811,A. I. Carlos Rovirosa Pérez,A. I. Benito Juárez,1:34,19:36,08:41PM CST
+VIV1287,A. I. Carlos Rovirosa Pérez,A. I. Benito Juárez,1:06,22:28,11:34PM CST
+SLI8153,A. I. de Bahías de Huatulco,A. I. Benito Juárez,0:45,13:11,lun 01:56PM CST
+SLI395,A. I. de Bahías de Huatulco,A. I. Benito Juárez,0:57,13:11,lun 02:08PM CST
+VOI779,A. I. de Bahías de Huatulco,A. I. Benito Juárez,1:03,14:02,lun 03:05PM CST
+VIV1093,A. I. de Bahías de Huatulco,A. I. Benito Juárez,0:48,15:57,lun 04:45PM CST
+SLI399,A. I. de Bahías de Huatulco,A. I. Benito Juárez,0:59,16:36,lun 05:35PM CST
+SLI8973,A. I. de Bahías de Huatulco,A. I. Benito Juárez,0:59,16:36,lun 05:35PM CST
+XA-VGL,A. I. de Cancún,A. I. Gral. Mariano Escobedo,2:05,15:31,04:36 PM CST
+VIV2026,A. I. de Cancún,A. I. Hermanos Serdán,1:43,15:18,04:01 PM CST
+VIV2082,A. I. de Cancún,A. I. Gral. Lucio Blanco,1:47,15:14,05:01 PM CDT
+VIV2168,A. I. de Cancún,A. I. Gral. Mariano Escobedo,2:00,15:10,04:10 PM CST
+AMX535,A. I. de Cancún,A. I. Benito Juárez,2:13,14:45,03:58 PM CST
+AMX8089,A. I. de Cancún,A. I. Benito Juárez,2:13,14:45,03:58 PM CST
+VIV2134,A. I. de Cancún,A. I. Miguel Hidalgo y Costilla,2:13,14:27,04:10 PM CST
+VOI631,A. I. de Cancún,A. I. Miguel Hidalgo y Costilla,2:41,14:28,04:06 PM CST
+VOI721,A. I. de Cancún,A. I. Miguel Hidalgo y Costilla,2:41,14:28,04:09 PM CST
+VOI191,A. I. de Cancún,A. I. Gral. Mariano Escobedo,2:30,13:56,03:26 PM CST
+AMX531,A. I. de Cancún,A. I. Benito Juárez,2:41,13:45,02:59 PM CST 
+AMX8072,A. I. de Cancún,A. I. Benito Juárez,2:14,13:45,02:59 PM CST 
+VIV1019,A. I. de Cancún,A. I. Benito Juárez,1:57,13:47,02:44 PM CST
+VOI701,A. I. de Cancún,A. I. Benito Juárez,2:30,12:58,02:28 PM CST
+SLI2367,A. I. de Cancún,A. I. Gral. Mariano Escobedo,2:23,15:30,04:53 PM CST
+VIV1017,A. I. de Cancún,A. I. Benito Juárez,1:51,13:18,02:09 PM CST
+AIJ2379,A. I. de Cancún,A. I. Benito Juárez,2:20,13:05,02:25 PM CST
+AMX523,A. I. de Cancún,A. I. Benito Juárez,2:21,11:35,12:56 PM CST
+VOI607,A. I. de Cancún,A. I. Miguel Hidalgo y Costilla ,2:48,10:57,12:45 PM CST
+VIV1015,A. I. de Cancún,A. I. Benito Juárez,2:02,10:11,11:13 AM CST
+VIV2136,A. I. de Cancún,A. I. Miguel Hidalgo y Costilla ,2:13,17:56,07:09 PM CST
+AMX8017,A. I. de Cancún,A. I. Benito Juárez,2:16,12:46,02:02 PM CST
+VIV2042,A. I. de Cancún,A. I. del Bajío,2:03,12:55,01:58 PM CST
+VOI147 ,A. I. de Chetumal,A. I. Miguel Hidalgo y Costilla,2:29,13:27,lun 03:36PM CST 
+VOI825 ,A. I. de Chetumal,A. I. Benito Juárez,2:32,17:55,lun 05:55PM CST 
+SLI7947,A. I. de Ciudad del Carmen,A. I. Benito Juárez,1:14,9:46,11:06AM CST
+SLI815,A. I. de Ciudad del Carmen,A. I. Benito Juárez,2:06,9:47,11:06AM CST
+SLI819,A. I. de Ciudad del Carmen,A. I. Benito Juárez,1:14,18:43,07:57PM CST
+SLI2063,A. I. de Ciudad Obregón,A. I. Benito Juárez,1:53,15:55,6:48 PM CST
+VIV4105,A. I. de Ciudad Obregón,A. I. Gral. Mariano Escobedo,2:25,16:50,7:15 PM CST
+VOI173,A. I. de Ciudad Obregón,A. I. Benito Juarez,2:04,19:18,10:22 PM CST
+VOI485,A. I. de Ciudad Obregón,A. I. Gral. Abelardo L. Rodríguez,1:15,21:38,9:53 PM PST
+AIJ2351,A. I. de Cozumel,A. I. Benito Juárez,1:53,16:37,05:30 PM CST
+FAM3911,A. I. de Cozumel,A. I. Benito Juárez,1:55,11:04,11:56 AM CST
+TAO422,A. I. de Ixtapa-Zihuatanejo,A. I. Benito Juárez,0:58,12:47,01:45PM CST
+TAO424,A. I. de Ixtapa-Zihuatanejo,A. I. Benito Juárez,0:53,16:17,05:13PM CST
+SLI2455,A. I. de Ixtapa-Zihuatanejo,A. I. Benito Juárez,0:46,17:31,06:17PM CST
+N518RC,A. I. de Los Cabos,A. I. Lic. Adolfo López Mateos ,2:01,7:49,10:50AM CST
+VIV9095,A. I. de Los Cabos,A. I. Gral. Ignacio Pesqueira García,1:02,9:54,10:56AM MST
+VQ-BOS,A. I. de Los Cabos,A. I. de Los Cabos,0:37,10:14,10:51AM MST
+VOI851,A. I. de Los Cabos,A. I. Miguel Hidalgo y Costilla ,1:27,10:56,12:57PM CST
+VIV9077,A. I. de Los Cabos,A. I. Federal de Culiacán,0:31,10:59,11:30AM MST
+N300CG,A. I. de Los Cabos,A. I. Federal del Valle del Fuerte,1:02,12:41, 01:43PM MST
+N53JD,A. I. de Los Cabos,A. I. Miguel Hidalgo y Costilla,1:44,12:45, 03:29PM CST
+SLI383,A. I. de Los Cabos,A. I. Benito Juárez,2:06,12:53,03:31PM CST
+VOI451,A. I. de Los Cabos,A. I. Gral. Abelardo L. Rodríguez,2:16,13:22, 03:14PM PDT
+VOI783,A. I. de Los Cabos,A. I. Benito Juárez ,2:04,13:57,04:38PM CST
+XA-COS,A. I. de Los Cabos,A. I. Gral. Abelardo L. Rodríguez,1:58,14:13,04:11PM PDT
+VOI747,A. I. de Los Cabos,A. I. Gral. Abelardo L. Rodríguez,1:22,14:13,04:11PM PDT
+AMX385,A. I. de Los Cabos,A. I. Benito Juárez,2:06,15:38,06:15PM CST
+SLI257,A. I. de Los Cabos,A. I. Miguel Hidalgo y Costilla ,1:19,16:14,06:18PM CST
+VIV4337,A. I. de Los Cabos,A. I. Gral. Mariano Escobedo,1:19,17:18,07:37PM CST
+SLI387,A. I. de Los Cabos,A. I. Benito Juárez,2:28,17:53,08:32PM CST
+VIV1217,A. I. de Los Cabos,A. I. Benito Juárez,1:33,20:58,11:31PM CST
+SLI7551 ,A. I. de Minatitlán,A. I. Benito Juárez,1:21,10:54,lun 11:50AM CST 
+SLI2529 ,A. I. de Minatitlán,A. I. Benito Juárez,1:21,10:54,lun 11:50AM CST 
+SLI8170 ,A. I. de Minatitlán,A. I. Benito Juárez,1:05,13:45,lun 02:31PM CST 
+SLI2521 ,A. I. de Minatitlán,A. I. Benito Juárez,1:05,13:45,lun 02:31PM CST 
+SLI2525 ,A. I. de Minatitlán,A. I. Benito Juárez,1:06,18:05,lun 06:52PM CST 
+TAO536 ,A. I. de Puerto Escondido,A. I. Benito Juárez,1:17,12:32,lun 01:42PM CST 
+VIV1183 ,A. I. de Puerto Escondido,A. I. Benito Juárez,0:52,13:36,lun 02:21PM CST 
+VIV1189 ,A. I. de Puerto Escondido,A. I. Benito Juárez,0:51,22:25,lun 11:08PM CST 
+UPS313,A. I. de Querétaro,A. I. Miguel Hidalgo y Costilla,0:43,18:40,07:23PM CST
+VOI366,A. I. de Querétaro,A. I. Lic. Gustavo Díaz Ordaz,0:53,18:34,07:27PM CST
+CJT981,A. I. de Querétaro,A. I. Miguel Hidalgo y Costilla,0:49,18:01,06:50PM CST
+SLI2226,A. I. de Querétaro,A. I. Gral. Mariano Escobedo,0:58,16:23,05:21PM CST
+XA-GEN,A. I. de Querétaro,A. I. Gral. Mariano Escobedo,1:02,15:13,04:15PM CST
+VOI112,A. I. de Querétaro,A. I. de Cancún,2:56,14:55,05:51PM EST
+VIV4203,A. I. de Querétaro,A. I. Gral. Mariano Escobedo,0:55,14:35,03:30PM CST
+SLI2463,A. I. de Querétaro,A. I. Benito Juárez,0:28,9:18,09:46AM CST
+VIV2059,A. I. de Querétaro,A. I. de Cancún,2:56,8:42,11:38AM EST
+N584PC,A. I. de Querétaro,A. I. Gral. Rafael Buelna,1:47,8:22,10:09AM CST
+VTM9902,A. I. de Querétaro,	A. I. Manuel Crescencio Rejón,1:39,2:34,04:13AM CST 
+SLI2226,A. I. de Querétaro,A. I. Gral. Mariano Escobedo,0:56,16:20,05:16PM CST
+XA-RFH,A. I. de Querétaro,A. I. Ponciano Arriaga,0:32,15:42,04:14PM CST
+SLI377,A. I. de Tapachula,A. I. Benito Juárez,1:17,20:00, 09:17PM CST
+SLI375,A. I. de Tapachula,A. I. Benito Juárez,1:26,14:51,04:17PM CST
+VOI797,A. I. de Tapachula,A. I. Benito Juárez,1:20,13:28,02:48PM CST
+SLI373,A. I. de Tapachula,A. I. Benito Juárez,1:18,10:06, 11:24AM CST
+VOI409,A. I. del Bajío,A. I. Gral. Abelardo L. Rodríguez,0:33,20:26,08:59PM PST
+SLI159,A. I. del Bajío,A. I. Benito Juárez,0:36,19:38,08:14PM CST
+SLI9084,A. I. del Bajío,A. I. Benito Juárez,0:37,19:37,08:14PM CST
+N970GW,A. I. del Bajío,A. I. Abraham González,0:51,18:30,07:21PM MST
+VOI594,A. I. del Bajío,A. I. de Cancún,2:11,15:04,06:17PM EST
+VOI638,A. I. del Bajío,A. I. de Cancún,3:20,13:56,05:06PM EST
+VIV4183,A. I. del Bajío,A. I. Gral. Mariano Escobedo,0:56,13:31,02:27PM CST
+VIV9066,A. I. del Bajío,A. I. Abraham González,0:41,11:41,12:22PM MST
+SLI153,A. I. del Bajío,A. I. Benito Juárez,0:31,11:18,11:49AM CST
+VOI248,A. I. del Bajío,A. I. de Los Cabos,0:17,10:39,10:56AM MST
+SLI155,A. I. del Bajío,A. I. Benito Juárez,0:34,8:48,09:22AM CST
+SLI8970,A. I. del Bajío,A. I. Benito Juárez,0:36,8:47,09:23AM CST
+VOI401,A. I. del Bajío,A. I. Gral. Abelardo L. Rodríguez,0:37,8:15,08:52AM PST
+VOI246,A. I. del Bajío,A. I. Lic. Gustavo Díaz Ordaz,0:40,7:26,08:06AM CST
+SLI8174,A.I. Federal de Culiacan,A. I. Benito Juárez,1:52,8:38,11:30AM CST
+VTM501	,A.I. Federal de Culiacan,A. I. Manuel Márquez de León,1:10,6:40,09:36AM MST
+ESF321,A.I. Federal de Culiacan,A. I. Ponciano Arriaga,1:00,22:21,12:21AM MST
+SLI8174,A.I. Federal de Culiacan,A. I. Benito Juárez,1:52,20:38,11:30AM CST
+VIV5011,A.I. Federal de Culiacan,A. I. Gral. Abelardo L. Rodríguez,1:52,22:00,11:52AM MST
+SLI2133,A. I. Federal del Valle del Fuerte,A. I. Benito Juárez,2:44,16:49,7:33 PM CST
+VIV4363,A. I. Federal del Valle del Fuerte,A. I. Gral. Mariano Escobedo,2:15,20:51,11:06 PM CST
+XA-AEA,A. I. Francisco Sarabia,A. I. Gral. Ignacio Pesqueira García,0:29,19:18, 07:47PM MST
+SLI109,A. I. Francisco Sarabia,A. I. Benito Juárez,1:16,18:24, 07:40PM CST
+N43AG,A. I. Francisco Sarabia,A. I. Gral. Roberto Fierro Villalobos,0:08,17:09, 05:01PM MST
+SLI107,A. I. Francisco Sarabia,A. I. Benito Juárez,1:12,14:58, 04:10PM CST
+SLI8026,A. I. Francisco Sarabia,A. I. Benito Juárez,1:00,14:57, 03:57PM CST
+XA-AEA,A. I. Francisco Sarabia,A. I. Plan de Guadalupe,0:28,14:24, 02:52PM CST
+SLI105,A. I. Francisco Sarabia,A. I. Benito Juárez,1:08,12:21, 01:29PM CST
+SLI9133,A. I. Francisco Sarabia,A. I. Benito Juárez,1:08,12:21, 01:29PM CST
+LCT814,A. I. Francisco Sarabia,A. I. Abraham González,0:52,10:00, 10:52AM MDT
+VOI657,A. I. Francisco Sarabia,A. I. Benito Juárez,1:16,9:41, 10:57AM CST
+SLI103,A. I. Francisco Sarabia,A. I. Benito Juárez,1:08,9:14, 10:22AM CST
+SLI7954,A. I. Francisco Sarabia,A. I. Benito Juárez,0:56,9:14, 10:10AM CST
+VIV1269,A. I. Francisco Sarabia,A. I. Benito Juárez,1:11,8:51, 10:02AM CST
+VOI801,A. I. Gral. y Lic. Ignacio López Rayón,A. I. Gral. Abelardo L. Rodríguez,3:09,13:42,03:37PM 
+VOI844,A. I. Gral. Abelardo L. Rodríguez,A. I. Amado Nervo ,2:42, 05:47 , 08:01AM MST
+VOI464,A. I. Gral. Abelardo L. Rodríguez,A. I. Hermanos Serdán ,3:05, 05:07 , 09:00AM CST
+VOI454,A. I. Gral. Abelardo L. Rodríguez,A. I. Guadalupe Victoria ,2:29, 03:03 , 06:13AM CST
+VOI5424,A. I. Gral. Abelardo L. Rodríguez,A. I. Miguel Hidalgo y Costilla ,2:39, 02:50 , 06:12AM CST
+VOI432,A. I. Gral. Abelardo L. Rodríguez,A. I. Miguel Hidalgo y Costilla ,2:46, 02:48 , 06:11AM CST
+VOI830,A. I. Gral. Abelardo L. Rodríguez,A. I. Gral. Leobardo C. Ruiz ,2:26, 02:37 , 05:49AM CST
+AMX193,A. I. Gral. Abelardo L. Rodríguez,A. I. Benito Juárez ,3:17, 02:31 , 06:18AM CST
+VOI400,A. I. Gral. Abelardo L. Rodríguez,A. I. del Bajío ,2:36, 02:06 , 05:26AM CST
+VOI540,A. I. Gral. Abelardo L. Rodríguez,A. I. Xoxocotlán ,4:04, 01:45 , 06:28AM CST
+VIV3115,A. I. Gral. Abelardo L. Rodríguez,A. I. Miguel Hidalgo y Costilla ,2:24, 01:37 , 05:01AM CST
+VOI490,A. I. Gral. Abelardo L. Rodríguez,A. I. Lic. Jesús Terán Peredo ,2:42, 01:35 , 05:02AM CST
+VIV1249,A. I. Gral. Abelardo L. Rodríguez,A. I. Benito Juárez ,2:53, 01:10 , 04:55AM CST
+VOI814,A. I. Gral. Abelardo L. Rodríguez,A. I. Benito Juárez ,3:10, 01:05 , 04:49AM CST
+VOI408,A. I. Gral. Abelardo L. Rodríguez,A. I. del Bajío ,2:41, 01:03 , 04:28AM CST
+VIV3113,A. I. Gral. Abelardo L. Rodríguez,A. I. Miguel Hidalgo y Costilla ,2:19, 12:56 , 04:15AM CST
+VOI428,A. I. Gral. Abelardo L. Rodríguez,A. I. Miguel Hidalgo y Costilla ,2:35, 12:48 , 04:13AM CST
+VOI440,A. I. Gral. Abelardo L. Rodríguez,A. I. Gral. Francisco J. Múgica ,2:58, 12:45 , 04:25AM CST
+VOI530,A. I. Gral. Abelardo L. Rodríguez,A. I. Gral. Juan N. Álvarez ,3:22, 12:35 , 04:39AM CST
+VIV5020,A. I. Gral. Abelardo L. Rodríguez,A. I. Gral. Francisco J. Múgica ,2:36, 12:14 , 03:50AM CST
+VOI810,A. I. Gral. Abelardo L. Rodríguez,A. I. Benito Juárez ,3:03, 12:10 , 03:53AM CST
+VIV1443,A. I. Gral. Fco. Javier Mina,A. I. Benito Juárez,0:39,7:50,08:29 AM CST
+VOI659,A. I. Gral. Fco. Javier Mina,A. I. Benito Juárez,0:41,8:42,09:23 AM CDT
+SLI9102,A. I. Gral. Fco. Javier Mina,A. I. Benito Juárez,0:39,8:48,09:27 AM CST
+SLI2411,A. I. Gral. Fco. Javier Mina,A. I. Benito Juárez,0:39,8:48,09:27 AM CDT
+VIV2153,A. I. Gral. Fco. Javier Mina,A. I. de Cancún,2:34,9:55,12:29 PM EST
+LCT610,A. I. Gral. Fco. Javier Mina,A. I. de Ciudad del Carmen,1:15,12:00,01:15 PM CST
+N250XX,A. I. Gral. Fco. Javier Mina,A. I. Ponciano Arriaga,0:44,12:43,01:27 PM CST
+XA-EYR,A. I. Gral. Fco. Javier Mina,A. I. Gral. Lucio Blanco,0:08,13:40,04:48 PM CDT
+SLI9126,A. I. Gral. Fco. Javier Mina,A. I. Benito Juárez,0:42,14:18,03:00 PM CST
+SLI2413,A. I. Gral. Fco. Javier Mina,A. I. Benito Juárez,0:43,14:18,03:01 PM CST
+SLI2587,A. I. Gral. Fco. Javier Mina,A. I. Benito Juárez,0:40,18:19,06:59 PM CST
+VOI487,A. I. Gral. Francisco J. Múgica,A. I. Gral. Abelardo L. Rodríguez,3:16,7:50,08:37AM PST
+VOI487,A. I. Gral. Francisco J. Múgica,A. I. Gral. Abelardo L. Rodríguez,3:19,0:20,00:39AM PST
+VOI487,A. I. Gral. Francisco J. Múgica,A. I. Gral. Abelardo L. Rodríguez,3:16,5:00,05:16AM PST
+SLI861,A. I. Gral. Heriberto Jara,A. I. Benito Juárez,1:07,18:42,07:49 PM CST
+VOI693,A. I. Gral. Heriberto Jara,A. I. Miguel Hidalgo y Costilla,1:24,15:51,05:15 PM CST
+SLI857,A. I. Gral. Heriberto Jara,A. I. Benito Juárez,1:14,14:25,03:39 PM CST
+VIV4165,A. I. Gral. Heriberto Jara,A. I. Gral. Mariano Escobedo,1:15,12:25,01:40 PM CST
+VIV2105,A. I. Gral. Heriberto Jara,A. I. de Cancún,1:27,11:27,01:54 PM EST
+SLI855,A. I. Gral. Heriberto Jara,A. I. Benito Juárez,1:05,10:50,11:55 AM CST
+VIV3045,A. I. Gral. Heriberto Jara,A. I. Miguel Hidalgo y Costilla,1:09,8:36,09:45 AM CST
+SLI2085,A. I. Gral. Heriberto Jara,A. I. Benito Juárez,1:00,8:05,09:05 AM CST
+VIV1423,A. I. Gral. Heriberto Jara,A. I. Benito Juárez,0:43,7:52,08:35 AM CST
+VTM384,A. I. Gral. Ignacio Pesqueira García,A. I. Gral. Abelardo L. Rodríguez,2:08, 05:33 , 06:41AM PDT
+SLI8059,A. I. Gral. Ignacio Pesqueira García,A. I. Benito Juárez,7:02, 07:31 , 03:33PM CST
+SLI701,A. I. Gral. Ignacio Pesqueira García,A. I. Benito Juárez,2:08, 07:31 , 10:39AM CST
+VOI761,A. I. Gral. Ignacio Pesqueira García,A. I. Benito Juárez,2:01, 07:45 , 10:46AM CST
+VIV9094,A. I. Gral. Ignacio Pesqueira García,A. I. de Los Cabos,1:01, 07:52 , 08:53AM MST
+VIV4111,A. I. Gral. Ignacio Pesqueira García,A. I. Gral. Mariano Escobedo,1:29, 08:11 , 10:40AM CST
+VOI741,A. I. Gral. Ignacio Pesqueira García,A. I. Miguel Hidalgo y Costilla,1:39, 09:24 , 12:03PM CST
+VOI501,A. I. Gral. Ignacio Pesqueira García,A. I. Gral. Abelardo L. Rodríguez,2:10, 09:49 , 11:00AM PDT
+AMX7975,A. I. Gral. Ignacio Pesqueira García,A. I. Benito Juárez,2:05, 09:57 , 01:02PM CST
+AMX705,A. I. Gral. Ignacio Pesqueira García,A. I. Benito Juárez,2:05, 09:57 , 01:02PM CST
+XC-LPO,A. I. Gral. Ignacio Pesqueira García,A. I. Benito Juárez,3:29, 10:37 , 03:06PM CST
+VIV3179,A. I. Gral. Ignacio Pesqueira García,A. I. Miguel Hidalgo y Costilla,1:39, 11:57 , 02:36PM CST
+VOI599,A. I. Gral. Ignacio Pesqueira García,A. I. Miguel Hidalgo y Costilla,1:41, 12:15 , 02:56PM CST
+AMX715,A. I. Gral. Ignacio Pesqueira García,A. I. Benito Juárez,2:06, 12:27 , 03:33PM CST
+AMX731,A. I. Gral. Ignacio Pesqueira García,A. I. Benito Juárez,2:08, 17:16 , 08:24PM CST
+N40SS,A. I. Gral. Ignacio Pesqueira García,A. I. Gral. Rodolfo Sánchez Taboada,3:03, 19:05 , 09:08PM PDT
+VIV1329,A. I. Gral. Ignacio Pesqueira García,A. I. Benito Juárez,2:05, 20:00 , 11:05PM CST
+VOI763,A. I. Gral. Ignacio Pesqueira García,A. I. Benito Juárez,2:04, 20:48 , 11:52PM CST
+ESF321,A. I. Gral. Ignacio Pesqueira García,A. I. Federal de Culiacán,0:54, 20:52 , 09:46PM MST
+VOI503,A. I. Gral. Ignacio Pesqueira García,A. I. Gral. Abelardo L. Rodríguez,2:10,21:28 , 10:38PM PDT
+VOI531,A. I. Gral. Juan N. Álvarez,A. I. Gral. Abelardo L. Rodríguez,2:26,6:08,08:34AM PDT
+XA-ZTK,A. I. Gral. Juan N. Álvarez,A. I. Lic. Adolfo López Mateos,0:34,11:06,11:40AM CST
+XA-ZZZ,A. I. Gral. Juan N. Álvarez,A. I. Lic. Adolfo López Mateos,0:31,11:15,11:46AM CST
+N911LM,A. I. Gral. Juan N. Álvarez,A. I. Lic. Adolfo López Mateos,0:26,12:33,12:59PM CST
+N19SG,A. I. Gral. Juan N. Álvarez,A. I. Gral. Mariano Matamoros,0:37,12:46,01:23PM CST
+VOI831,A. I. Gral. Leobardo C. Ruiz,A. I. Gral. Abelardo L. Rodríguez,2:52,6:30,08:22AM PDT
+VOI837,A. I. Gral. Leobardo C. Ruiz,A. I. Gral. Abelardo L. Rodríguez,2:48,7:53,09:41AM PDT
+VIV1293,A. I. Gral. Leobardo C. Ruiz,A. I. Benito Juárez,0:56,8:32,09:28AM CST
+SLI2643,A. I. Gral. Leobardo C. Ruiz,A. I. Benito Juárez,1:07,9:50,10:57AM CST
+SLI8119,A. I. Gral. Leobardo C. Ruiz,A. I. Benito Juárez,1:07,9:50,10:57AM CST
+SLI2647,A. I. Gral. Leobardo C. Ruiz,A. I. Benito Juárez,1:12,19:20,08:32PM CST
+VIV3011,A. I. Gral. Lucio Blanco,A. I. Miguel Hidalgo y Costilla,0:10,9:11, 09:21AM CST
+VIV9036,A. I. Gral. Lucio Blanco,A. I. Gral. Heriberto Jara,0:12,10:34, 10:46AM CST
+SLI2497,A. I. Gral. Lucio Blanco,A. I. Benito Juárez,0:07,12:18, 12:25PM CST
+N500AD,A. I. Gral. Lucio Blanco,A. I. Miguel Hidalgo y Costilla,0:15,18:35, 06:50PM CST
+SLI2499,A. I. Gral. Lucio Blanco,A. I. Benito Juárez,0:13,18:36, 06:49PM CST
+VIV1201,A. I. Gral. Lucio Blanco,A. I. Benito Juárez,0:04,19:16, 07:20PM CST
+VIV1141,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:01,22:51, 11:52PM CST
+AMX961,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:00,21:13, 10:13PM CST
+VIV4308,A. I. Gral. Mariano Escobedo,A. I. Gral. Fco. Javier Mina,00:46,20:46, 09:32PM CST
+VIV3201,A. I. Gral. Mariano Escobedo,A. I. Miguel Hidalgo y Costilla,01:00,20:40, 09:40PM CST
+VIV4168,A. I. Gral. Mariano Escobedo,A. I. Gral. Heriberto Jara,01:12,20:35, 09:47PM CST
+VOI511,A. I. Gral. Mariano Escobedo,A. I. Gral. Abelardo L. Rodríguez,00:26,20:14, 08:40PM PST
+SLI957,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:01,20:00, 09:01PM CST
+VIV4362,A. I. Gral. Mariano Escobedo,A. I. Federal del Valle del Fuerte,00:19,19:53, 08:12PM MST
+VIV4276,A. I. Gral. Mariano Escobedo,A. I. Federal de Culiacán,00:07,19:17, 07:24PM MST
+VIV4398,A. I. Gral. Mariano Escobedo,A. I. Carlos Rovirosa Pérez,01:35,19:12, 08:47PM CST
+VIV2175,A. I. Gral. Mariano Escobedo,A. I. de Cancún,02:57,19:01, 09:58PM EST
+AMX953,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:02,18:58, 08:00PM CST
+VOI179,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:05,18:43, 07:48PM CST
+VIV1127,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:05,18:18, 07:23PM CST
+SLI987,A. I. Gral. Mariano Escobedo,A. I. Miguel Hidalgo y Costilla,01:01,18:04, 07:05PM CST
+SLI8077,A. I. Gral. Mariano Escobedo,A. I. Miguel Hidalgo y Costilla,01:02,18:03, 07:05PM CST
+AMX949,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:01,17:57, 06:58PM CST
+VIV1137,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:02,17:12, 06:14PM CST
+AMX945,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,00:59,17:08, 06:07PM CST
+AMX7967,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:01,17:07, 06:08PM CST
+VIV4066,A. I. Gral. Mariano Escobedo,A. I. Gral. Francisco J. Múgica,01:00,16:52, 05:52PM CST
+VOI513,A. I. Gral. Mariano Escobedo,A. I. Gral. Abelardo L. Rodríguez,00:25,16:49, 05:14PM PST
+VIV4316,A. I. Gral. Mariano Escobedo,A. I. Gral. Roberto Fierro Villalobos,00:02,16:38, 04:40PM MST
+VOI194,A. I. Gral. Mariano Escobedo,A. I. Manuel Crescencio Rejón,01:36,16:32, 06:08PM CST
+VIV4142,A. I. Gral. Mariano Escobedo,A. I. Manuel Márquez de León,00:30,16:27, 04:57PM MST
+VIV3195,A. I. Gral. Mariano Escobedo,A. I. Miguel Hidalgo y Costilla,01:03,16:03, 05:06PM CST
+VOI647,A. I. Gral. Mariano Escobedo,A. I. Miguel Hidalgo y Costilla,01:02,15:59, 05:01PM CST
+AMX937,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:03,15:53, 04:56PM CST
+AMX7976,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:04,15:52, 04:56PM CST
+VOI183,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:00,15:50, 04:50PM CST
+VIV2171,A. I. Gral. Mariano Escobedo,A. I. de Cancún,02:58,14:39, 05:37PM EST
+VIV4074,A. I. Gral. Mariano Escobedo,A. I. Xoxocotlán,01:29,14:33, 04:02PM CST
+N647QS,A. I. Gral. Mariano Escobedo,A. I. Lic. Adolfo López Mateos,01:05,13:54, 02:59PM CST
+VIV4196,A. I. Gral. Mariano Escobedo,A. I. Ángel Albino Corzo,01:45,13:32, 03:17PM CST
+VOI228,A. I. Gral. Mariano Escobedo,A. I. de Cancún,02:58,12:41, 03:39PM EST
+VIV2169,A. I. Gral. Mariano Escobedo,A. I. de Cancún,02:57,12:17, 03:14PM EST
+AMX925,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:01,12:05, 01:06PM CST
+AMX7973,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:03,12:04, 01:07PM CST
+VIV4342,A. I. Gral. Mariano Escobedo,A. I. Lic. Gustavo Díaz Ordaz,01:08,11:50, 12:58PM CST
+VIV4020,A. I. Gral. Mariano Escobedo,A. I. Gral. Rafael Buelna,00:00,11:19, 11:19AM MST
+SLI2366,A. I. Gral. Mariano Escobedo,A. I. de Cancún,03:09,11:12, 02:21PM EST
+AMX921,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:00,10:59, 11:59AM CST
+AMX8030,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:01,10:58, 11:59AM CST
+VIV2167,A. I. Gral. Mariano Escobedo,A. I. de Cancún,03:03,10:44, 01:47PM EST
+VOI226,A. I. Gral. Mariano Escobedo,A. I. de Cancún,03:00,10:13, 01:13PM EST
+AMX917,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:05,10:02, 11:07AM CST
+AMX8156,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:06,10:01, 11:07AM CST
+VIV1123,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:07,9:54, 11:01AM CST
+VIV4324,A. I. Gral. Mariano Escobedo,A. I. de Los Cabos,00:33,9:09, 09:42AM MST
+VOI212,A. I. Gral. Mariano Escobedo,A. I. de Cancún,03:03,8:12, 11:15AM EST
+VIV1121,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:01,7:50, 08:51AM CST
+VOI208,A. I. Gral. Mariano Escobedo,A. I. Hermanos Serdán,01:10,7:40, 08:50AM CST
+AMX905,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:01,7:16, 08:17AM CST
+SLI2263,A. I. Gral. Mariano Escobedo,A. I. de Querétaro,00:54,7:09, 08:03AM CST
+VIV4000,A. I. Gral. Mariano Escobedo,A. I. Hermanos Serdán,01:11,7:03, 08:14AM CST
+VIV3191,A. I. Gral. Mariano Escobedo,A. I. Miguel Hidalgo y Costilla,01:01,7:01, 08:02AM CST
+VIV4392,A. I. Gral. Mariano Escobedo,A. I. Carlos Rovirosa Pérez,01:36,6:53, 08:29AM CST
+VIV4146,A. I. Gral. Mariano Escobedo,A. I. Abraham González,00:17,6:45, 07:02AM MST
+VIV4200,A. I. Gral. Mariano Escobedo,A. I. de Querétaro,00:52,6:40, 07:32AM CST
+VIV4280,A. I. Gral. Mariano Escobedo,A. I. Manuel Crescencio Rejón,01:38,6:39, 08:17AM CST
+SLI981,A. I. Gral. Mariano Escobedo,A. I. Miguel Hidalgo y Costilla,01:01,6:33, 07:34AM CST
+AMX903,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:03,6:31, 07:34AM CST
+AMX8163,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:04,6:30, 07:34AM CST
+VIV1133,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:02,6:27, 07:29AM CST
+VIV4162,A. I. Gral. Mariano Escobedo,A. I. Gral. Heriberto Jara,01:13,6:26, 07:39AM CST
+VIV4110,A. I. Gral. Mariano Escobedo,A. I. Gral. Ignacio Pesqueira García,00:31,6:11, 06:42AM MST
+VOI677,A. I. Gral. Mariano Escobedo,A. I. Miguel Hidalgo y Costilla,01:05,6:07, 07:12AM CST
+VIV2163,A. I. Gral. Mariano Escobedo,A. I. de Cancún,02:58,6:01, 08:59AM EST
+VOI181,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,01:00,5:39, 06:39AM CST
+VIV1117,A. I. Gral. Mariano Escobedo,A. I. Benito Juárez,00:59,5:20, 06:19AM CST
+N3014C,A. I. Gral. Mariano Matamoros,A. I. Miguel Hidalgo y Costilla,1:15,18:53,08:08PM CST
+VTM384,A. I. Gral. Rafael Buelna,A. I. Gral. Ignacio Pesqueira García ,1:12, 03:41 , 04:53AM MST
+SLI353,A. I. Gral. Rafael Buelna,A. I. Benito Juárez ,2:13, 11:00 , 01:13PM CST
+VOI591,A. I. Gral. Rafael Buelna,A. I. Gral. Abelardo L. Rodríguez ,2:11, 11:44 , 01:55PM PDT
+VIV1151,A. I. Gral. Rafael Buelna,A. I. Benito Juárez ,2:10, 12:39 , 02:49PM CST
+XA-ERO,A. I. Gral. Rafael Buelna,A. I. Miguel Hidalgo y Costilla ,2:16, 13:01 , 03:17PM CST
+SLI8979,A. I. Gral. Rafael Buelna,A. I. Benito Juárez ,2:14, 14:14 , 04:28PM CST
+SLI355,A. I. Gral. Rafael Buelna,A. I. Benito Juárez ,2:13, 14:15 , 04:28PM CST
+VOI799,A. I. Gral. Rafael Buelna,A. I. Benito Juárez ,2:13, 15:34 , 05:47PM CST
+VIV4023,A. I. Gral. Rafael Buelna,A. I. Gral. Mariano Escobedo,1:58, 17:12 , 07:10PM CST
+SLI357,A. I. Gral. Rafael Buelna,A. I. Benito Juárez ,2:16, 17:52 , 08:08PM CST
+ESF337,A. I. Gral. Roberto Fierro Villalobos,A. I. Benito Juárez,2:43,21:46,12:29AM CST
+VIV4321,A. I. Gral. Roberto Fierro Villalobos,A. I. Gral. Mariano Escobedo,2:15,20:43,10:58PM CST
+XA-TBC,A. I. Gral. Roberto Fierro Villalobos,A. I. Plan de Guadalupe,1:51,20:32,10:22PM CST
+VOI473,A. I. Gral. Roberto Fierro Villalobos,A. I. Gral. Abelardo L. Rodríguez,1:43,19:27,09:10PM PDT
+SLI2143,A. I. Gral. Roberto Fierro Villalobos,A. I. Benito Juárez,2:44,18:58,09:42PM CST
+VIV1051,A. I. Gral. Roberto Fierro Villalobos,A. I. Benito Juárez,2:45,17:20,08:05PM CST
+AMX147,A. I. Gral. Roberto Fierro Villalobos,A. I. Benito Juárez,2:47,17:09,07:56PM CST
+XA-AVO,A. I. Gral. Roberto Fierro Villalobos,A. I. Lic. Adolfo López Mateos,2:56,17:05,08:01PM CST
+VIV9105,A. I. Gral. Roberto Fierro Villalobos,A. I. Gral. Rafael Buelna,1:39,16:26,05:55PM MST
+N40SS,A. I. Gral. Roberto Fierro Villalobos,A. I. Gral. Ignacio Pesqueira García,1:44,16:05,05:49PM MST
+N102GS,A. I. Gral. Roberto Fierro Villalobos,A. I. Ponciano Arriaga,3:03,16:02,07:05PM CST
+XA-HCR,A. I. Gral. Roberto Fierro Villalobos,A. I. Manuel Márquez de León,1:09,15:24,04:33PM MST
+VIV2185,A. I. Gral. Roberto Fierro Villalobos,A. I. de Cancún,4:37,12:34,05:11PM EST
+AMX143,A. I. Gral. Roberto Fierro Villalobos,A. I. Benito Juárez,2:44,12:15,02:59PM CST
+AMX8047,A. I. Gral. Roberto Fierro Villalobos,A. I. Benito Juárez,2:44,12:15,02:59PM CST
+XA-COS,A. I. Gral. Roberto Fierro Villalobos,A. I. de Los Cabos,1:12,11:59,01:11PM MST
+AMX141,A. I. Gral. Roberto Fierro Villalobos,A. I. Benito Juárez,2:43,9:52,12:35PM CST
+AMX8110,A. I. Gral. Roberto Fierro Villalobos,A. I. Benito Juárez,2:43,9:52,12:34PM CST
+VOI679,A. I. Gral. Roberto Fierro Villalobos,A. I. Miguel Hidalgo y Costilla,2:20,8:05,10:25AM CST
+VOI725,A. I. Gral. Roberto Fierro Villalobos,A. I. Benito Juárez,2:40,7:51,10:31AM CST
+VTMM5,A. I. Gral. Roberto Fierro Villalobos,A. I. Abraham González,1:39,6:56,08:35AM MDT
+AMX139,A. I. Gral. Roberto Fierro Villalobos,A. I. Benito Juárez,2:40,6:17,08:57AM CST
+VOI751,A. I. Gral. Rodolfo Sánchez Taboada,A. I. Benito Juárez,2:54,12:03,03:39AM CST
+SLI191,A. I. Gral. Rodolfo Sánchez Taboada,A. I. Benito Juárez,3:09,12:53,04:37AM CST
+N200XC,A. I. Gral. Rodolfo Sánchez Taboada,A. I. Manuel Márquez de León,2:10,6:46,08:56AM MST
+VOI621,A. I. Gral. Rodolfo Sánchez Taboada,A. I. Miguel Hidalgo y Costilla,2:33, 8:17,11:30AM CST
+AMX199,A. I. Gral. Rodolfo Sánchez Taboada,A. I. Benito Juárez,3:01, 13:02, 04:43PM CST
+VOI165,A. I. Gral. Rodolfo Sánchez Taboada,A. I. Federal de Culiacán,1:51,20:32,10:06PM MST
+VOI625,A. I. Gral. Rodolfo Sánchez Taboada,A. I. Miguel Hidalgo y Costilla,2:42,21:14,mar 12:30AM CST
+SLI8116,A. I. Guadalupe Victoria,A. I. Benito Juárez,1:05,15:19, 16:24PM CST
+SLI9087,A. I. Guadalupe Victoria,A. I. Benito Juárez,1:11,9:43, 10:54AM CST
+XB-PML,A. I. Hermanos Serdán,A. I. Lic. Gustavo Díaz Ordaz,2:17,7:55,10:12AM CST
+VOI110,A. I. Hermanos Serdán,A. I. de Cancún,1:59,8:13,11:12AM EST
+VOI465,A. I. Hermanos Serdán,A. I. Gral. Abelardo L. Rodríguez,3:33,9:54,12:27PM PDT
+VIV2025,A. I. Hermanos Serdán,A. I. de Cancún,1:52,11:18,14:10PM EST
+VIV4003,A. I. Hermanos Serdán,A. I. Gral. Mariano Escobedo,1:09,16:51,18:00PM CST
+VIV3247,A. I. Hermanos Serdán,A. I. Miguel Hidalgo y Costilla,0:53,18:13,19:06PM CST
+VOI461,A. I. Hermanos Serdán,A. I. Gral. Abelardo L. Rodríguez,3:39,18:17,20:56PM PDT
+SLI2443,A. I. Ing. Alberto Acuña Ongay,A. I. Benito Juárez ,1:18,18:56,20:14PM CST
+SLI2441,A. I. Ing. Alberto Acuña Ongay,A. I. Benito Juárez,1:25,9:51,11:16AM CST
+SLI8087,A. I. Ing. Alberto Acuña Ongay,A. I. Benito Juárez,1:25,9:51,11:16AM CST
+XA-ETP,A. I. Lic. Adolfo López Mateos,A. I. Gral. Juan N. Álvarez,0:35,18:40,19:15PM CST
+XA-BPS,A. I. Lic. Adolfo López Mateos,A. I. Xoxocotlán,0:43,18:38,19:21PM CST
+XA-RKY,A. I. Lic. Adolfo López Mateos,A. I. Gral. Juan N. Álvarez,0:31,17:56,18:27PM CST
+XA-RFH,A. I. Lic. Adolfo López Mateos,A. I. Ponciano Arriaga,0:59,17:14,18:13PM CST
+N770BR,A. I. Lic. Adolfo López Mateos,A. I. Miguel Hidalgo y Costilla,0:49,17:08,17:57PM CST
+ACW1707,A. I. Lic. Adolfo López Mateos,A. I. Ángel Albino Corzo,1:13,16:52,18:05PM CST
+LET7163,A. I. Lic. Adolfo López Mateos,A. I. Gral. Juan N. Álvarez,0:29,15:58,16:27PM CST
+XA-CSS,A. I. Lic. Adolfo López Mateos,A. I. Gral. Juan N. Álvarez,0:31,15:41,16:12PM CST
+XA-PBX,A. I. Lic. Adolfo López Mateos,A. I. Manuel Márquez de León,0:50,15:04,15:54PM MST
+XA-AYL,A. I. Lic. Adolfo López Mateos,A. I. de Los Cabos,0:31,15:01,15:32PM MST
+XA-EMM,A. I. Lic. Adolfo López Mateos,A. I. Plan de Guadalupe,1:00,14:58,16:02PM CST
+LET7155,A. I. Lic. Adolfo López Mateos,A. I. de Los Cabos,0:47,14:39,15:26PM MST
+XA-NYM,A. I. Lic. Adolfo López Mateos,A. I. de Loreto,1:59,14:05,16:04PM MST
+N300FB,A. I. Lic. Adolfo López Mateos,A. I. de Loreto,1:47,13:35,15:22PM MST
+LET8192,A. I. Lic. Adolfo López Mateos,A. I. Manuel Crescencio Rejón,1:36,13:27,15:03PM CST
+N472JL,A. I. Lic. Adolfo López Mateos,A. I. Gral. Ignacio Pesqueira García,2:13,13:00,15:13PM MST
+LET5171,A. I. Lic. Adolfo López Mateos,A. I. Gral. Juan N. Álvarez,0:38,12:59,13:37PM CST
+XA-HHH,A. I. Lic. Adolfo López Mateos,A. I. Xoxocotlán,0:45,12:28,13:13PM CST
+XA-TVG,A. I. Lic. Adolfo López Mateos,A. I. Lic. Gustavo Díaz Ordaz,1:00,11:10,12:10PM CST
+XA-CSS,A. I. Lic. Adolfo López Mateos,A. I. Gral. Juan N. Álvarez,0:36,11:05,11:41AM CST
+XA-RAA,A. I. Lic. Adolfo López Mateos,A. I. Gral. Juan N. Álvarez,0:35,10:39,11:14AM CST
+LET7153,A. I. Lic. Adolfo López Mateos,A. I. Lic. Gustavo Díaz Ordaz,0:59,9:29,10:28AM CST
+XA-EGL,A. I. Lic. Adolfo López Mateos,A. I. Federal de Culiacán,1:03,6:14,19:17PM MST
+XA-CSS,A. I. Lic. Adolfo López Mateos,A. I. Gral. Juan N. Álvarez,0:31,5:59,18:30PM CST
+VIV1173,A. I. Lic. Gustavo Díaz Ordaz,A. I. Benito Juárez,1:11,21:10,22:21PM CST
+VOI551,A. I. Lic. Gustavo Díaz Ordaz,A. I. Gral. Abelardo L. Rodríguez,2:42,19:12,20:54PM PDT
+XA-ABL,A. I. Lic. Gustavo Díaz Ordaz,A. I. de Querétaro,0:56,19:12,20:08PM CST
+N53JD,A. I. Lic. Gustavo Díaz Ordaz,A. I. Miguel Hidalgo y Costilla,0:42,18:48,19:30PM CST
+SLI339,A. I. Lic. Gustavo Díaz Ordaz,A. I. Benito Juárez,1:23,17:52,19:15PM CST
+SLI9007,A. I. Lic. Gustavo Díaz Ordaz,A. I. Benito Juárez,1:23,17:52,19:15PM CST
+VIV3235,A. I. Lic. Gustavo Díaz Ordaz,A. I. Miguel Hidalgo y Costilla,0:29,17:31,18:00PM CST
+TAO123,A. I. Lic. Gustavo Díaz Ordaz,A. I. Miguel Hidalgo y Costilla,0:38,15:04,15:42PM CST
+VOI785,A. I. Lic. Gustavo Díaz Ordaz,A. I. Benito Juárez,1:30,13:29,15:59PM CST
+SLI337,A. I. Lic. Gustavo Díaz Ordaz,A. I. Benito Juárez,1:29,13:23,15:52PM CST
+VIV4343,A. I. Lic. Gustavo Díaz Ordaz,A. I. Gral. Mariano Escobedo,1:06,14:02,15:08PM CST
+VIV1167,A. I. Lic. Gustavo Díaz Ordaz,A. I. Benito Juárez,1:07,13:24,14:31PM CST
+AMX333,A. I. Lic. Gustavo Díaz Ordaz,A. I. Benito Juárez,1:29,11:40,13:09PM CST
+AMX8996,A. I. Lic. Gustavo Díaz Ordaz,A. I. Benito Juárez,1:29,11:40,13:09PM CST
+XB-PML,A. I. Lic. Gustavo Díaz Ordaz,A. I. Hermanos Serdán,2:33,11:18,13:51PM CST
+TAO121,A. I. Lic. Gustavo Díaz Ordaz,A. I. Miguel Hidalgo y Costilla,0:35,10:59,11:34AM CST
+XA-UQK,A. I. Lic. Gustavo Díaz Ordaz,A. I. Miguel Hidalgo y Costilla,0:47,10:35,11:22AM CST
+XA-UTD,A. I. Lic. Gustavo Díaz Ordaz,A. I. Lic. Adolfo López Mateos,1:01,10:19,11:20AM CST
+N650QS,A. I. Lic. Gustavo Díaz Ordaz,A. I. de Los Cabos,0:54,9:50,09:44AM MST
+XB-EXJ,A. I. Lic. Gustavo Díaz Ordaz,A. I. Miguel Hidalgo y Costilla,0:47,9:36,10:23AM CST
+XA-GPO,A. I. Lic. Gustavo Díaz Ordaz,A. I. Lic. Adolfo López Mateos,0:55,9:29,10:24AM CST
+SLI331,A. I. Lic. Gustavo Díaz Ordaz,A. I. Benito Juárez,1:25,6:27,07:52AM CST
+SLI8137,A. I. Lic. Gustavo Díaz Ordaz,A. I. Benito Juárez,1:25,6:27,07:52AM CST
+XB-JZT,A. I. Lic. Gustavo Díaz Ordaz,A. I. Miguel Hidalgo y Costilla,0:38,7:23,08:01AM CST
+VOI493,A. I. Lic. Jesús Terán Peredo,A. I. Gral. Rodolfo Sánchez Taboada,1:13,20:44, 21:57PM PST
+SLI2585,A. I. Lic. Jesús Terán Peredo,A. I. Benito Juárez,0:40,20:06, 20:46PM CST
+VOI636,A. I. Lic. Jesús Terán Peredo,A. I. de Cancún,3:10,17:43, 20:53PM EST
+SLI2629,A. I. Lic. Jesús Terán Peredo,A. I. Benito Juárez,0:45,11:28, 12:13PM CST
+SLI8147,A. I. Lic. Jesús Terán Peredo,A. I. Benito Juárez,0:45,11:28, 12:13PM CST
+N125FS,A. I. Lic. Jesús Terán Peredo,A. I. Gral. Abelardo L. Rodríguez,0:41,11:15, 11:56AM PST
+VOI617,A. I. Lic. Jesús Terán Peredo,A. I. Benito Juárez,0:42,9:50, 10:32AM CST
+VIV2207,A. I. Lic. Jesús Terán Peredo,A. I. de Cancún,3:11,9:44, 12:55PM EST
+SLI2633,A. I. Lic. Jesús Terán Peredo,A. I. Benito Juárez,0:41,8:25, 09:06AM CST
+SLI8172,A. I. Lic. Jesús Terán Peredo,A. I. Benito Juárez,0:30,8:24, 08:54AM CST
+VOI491,A. I. Lic. Jesús Terán Peredo,A. I. Gral. Abelardo L. Rodríguez,0:26,6:53, 07:19AM PST
+SLI2631,A. I. Lic. Jesús Terán Peredo,A. I. Benito Juárez,0:40,6:32, 07:12AM CST
+SLI8135,A. I. Lic. Jesús Terán Peredo,A. I. Benito Juárez,0:41,6:32, 07:13AM CST
+SLI841,A. I. Manuel Crescencio Rejón,A. I. Benito Juárez,2:03,18:59,21:02 PM CST
+SLI835,A. I. Manuel Crescencio Rejón,A. I. Benito Juárez,1:52,16:09,18:01 PM CST
+VOI757,A. I. Manuel Crescencio Rejón,A. I. Benito Juárez,1:50,14:59,16:49 PM CST
+AMX833,A. I. Manuel Crescencio Rejón,A. I. Benito Juárez,1:57,13:47,15:44 PM CST
+AMX8060,A. I. Manuel Crescencio Rejón,A. I. Benito Juárez,1:57,13:47,15:44 PM CST
+VIV9024,A. I. Manuel Crescencio Rejón,A. I. Gral. Heriberto Jara,1:06,10:33,11:39 AM CST
+VIV3063,A. I. Manuel Crescencio Rejón,A. I. Miguel Hidalgo y Costilla,2:00,10:05,12:05 PM CST
+AMX7991,A. I. Manuel Crescencio Rejón,A. I. Benito Juárez,1:54,9:29,11:23 AM CST
+VOI687,A. I. Manuel Crescencio Rejón,A. I. Miguel Hidalgo y Costilla,2:25,6:42,09:07 AM CST
+AMX8015,A. I. Manuel Crescencio Rejón,A. I. Benito Juárez,2:01,5:57,07:58 AM CST
+VOI609,A. I. Manuel Márquez de León,A. I. Benito Juárez,2:49,8:19,11:08AM CST
+VIV4143,A. I. Manuel Márquez de León,A. I. Gral. Mariano Escobedo,2:20,17:59,20:19PM CST
+VOI581,A. I. Manuel Márquez de León,A. I. Gral. Abelardo L. Rodríguez,0:32,9:08,09:40AM PST
+VOI771,A. I. Manuel Márquez de León,A. I. Benito Juárez,2:33,17:57,20:31PM CST
+XC-MPF,A. I. Manuel Márquez de León,A. I. Federal de Culiacán,0:35,10:00,10:35AM MST
+VIV1345,A. I. Manuel Márquez de León,A. I. Benito Juárez,2:43,11:56,14:39PM CST
+SLI9138,A. I. Manuel Márquez de León,A. I. Benito Juárez,2:44,13:00,15:44PM CST
+SLI369,A. I. Manuel Márquez de León,A. I. Benito Juárez,2:43,13:00,15:43PM CST
+VIV9059,A. I. Manuel Márquez de León,A. I. Federal de Culiacán,0:37,16:54,17:31PM MST
+VOI681,A. I. Manuel Márquez de León,A. I. Miguel Hidalgo y Costilla,2:15,14:54,17:09PM CST
+VTM501,A. I. Manuel Márquez de León,A. I. Federal de Culiacán,0:27,9:09,21:36PM MST
+VIV3227,A. I. Manuel Márquez de León,A. I. Miguel Hidalgo y Costilla,2:13,19:35,21:48PM CST
+XA-HCR,A. I. Manuel Márquez de León,A. I. Gral. Roberto Fierro Villalobos,0:52,18:03,18:55PM MST
+VIV9059,A. I. Manuel Márquez de León,A. I. Federal de Culiacán,0:33,16:49,17:22PM MST
+VOI681,A. I. Manuel Márquez de León,A. I. Miguel Hidalgo y Costilla,2:14,14:41,16:55PM CST
+VOI509,A. I. Miguel Hidalgo y Costilla,A. I. Gral. Abelardo L. Rodríguez,2:54,6:10,lun 06:42AM PST
+VIV3044,A. I. Miguel Hidalgo y Costilla,A. I. Gral. Heriberto Jara,1:06,6:09,lun 07:15AM CST
+VOI731,A. I. Miguel Hidalgo y Costilla,A. I. Benito Juárez,1:17,6:03,lun 06:51AM CST
+VIV3328,A. I. Miguel Hidalgo y Costilla,A. I. Gral. Rodolfo Sánchez Taboada,1:42,6:01,lun 06:43AM MST
+VOI620,A. I. Miguel Hidalgo y Costilla,A. I. Gral. Rodolfo Sánchez Taboada,2:42,5:44,lun 06:07AM PST
+MAA1811,A. I. Miguel Hidalgo y Costilla,A. I. Benito Juárez,0:45,5:41,lun 06:26AM CST
+VOI435,A. I. Miguel Hidalgo y Costilla,A. I. Gral. Abelardo L. Rodríguez,2:52,5:36,lun 06:07AM PST
+AMX110,A. I. Miguel Hidalgo y Costilla,A. I. Gral. Abelardo L. Rodríguez,3:02,12:16,lun 12:47AM PST
+VIV3114,A. I. Miguel Hidalgo y Costilla,A. I. Gral. Abelardo L. Rodríguez,2:28,12:06,lun 12:34AM PST
+VOI453,A. I. Miguel Hidalgo y Costilla,A. I. Gral. Abelardo L. Rodríguez,2:50,12:04,lun 12:30AM PST
+VTM356,A.I. Plan de Guadalupe ,A. I. Miguel Hidalgo y Costilla,0:59,14:49,15:48PM CDT
+SLI2565,A. I. Playa de Oro,A. I. Benito Juárez,1:35,10:58,12:33PM CST
+TAO9003,A. I. Ponciano Arriaga,A. I. Benito Juárez,0:54,12:30, 01:24AM CST
+SLI7948,A. I. Ponciano Arriaga,A. I. Benito Juárez,0:35,6:36, 07:11AM CST
+SLI2539,A. I. Ponciano Arriaga,A. I. Benito Juárez,0:35,6:36, 07:11AM CST
+N250XX,A. I. Ponciano Arriaga,A. I. Gral. Francisco J. Múgica,0:46,8:43, 09:29AM CST
+SLI9089,A. I. Ponciano Arriaga,A. I. Benito Juárez,0:37,9:02, 09:39AM CST
+SLI2541,A. I. Ponciano Arriaga,A. I. Benito Juárez,0:36,9:02, 09:38AM CST
+N5814A,A. I. Ponciano Arriaga,A. I. Lic. Jesús Terán Peredo,0:33,9:41,10:14AM CST 
+SLI8132,A. I. Ponciano Arriaga,A. I. Benito Juárez,0:40,11:35, 12:15PM CST
+SLI2535,A. I. Ponciano Arriaga,A. I. Benito Juárez,0:40,11:35, 12:15PM CST
+N627DP,A. I. Ponciano Arriaga,A. I. Guadalupe Victoria,1:29,11:51, 13:20PM CST
+VOI122,A. I. Ponciano Arriaga,A. I. de Cancún,2:57,12:02, 14:59PM EST
+SLI7980,A. I. Ponciano Arriaga,A. I. Benito Juárez,0:38,19:57, 20:35PM CST
+SLI2979,A. I. Ponciano Arriaga,A. I. Benito Juárez,0:37,19:57, 20:34PM CST
+TAO345,A. I. Ponciano Arriaga,A. I. Benito Juárez,1:02,20:01, 21:03PM CST
+SLI7998,A. I. Xoxocotlán,A. I. Benito Juárez,0:42,6:53,lun 07:35AM CST
+SLI2407,A. I. Xoxocotlán,A. I. Benito Juárez,0:42,6:53,lun 07:35AM CST
+VOI541,A. I. Xoxocotlán,A. I. Gral. Abelardo L. Rodríguez,4:37,7:29,lun 10:06AM PDT
+SLI8018,A. I. Xoxocotlán,A. I. Benito Juárez,0:42,11:19,lun 12:01PM CST
+SLI2049,A. I. Xoxocotlán,A. I. Benito Juárez,0:41,11:19,lun 12:00PM CST
+VOI765,A. I. Xoxocotlán,A. I. Benito Juárez,0:53,13:07,lun 02:00PM CST
+SLI8169,A. I. Xoxocotlán,A. I. Benito Juárez,0:51,14:12,lun 03:03PM CST
+SLI2099,A. I. Xoxocotlán,A. I. Benito Juárez,0:51,14:12,lun 03:03PM CST
+VIV4075,A. I. Xoxocotlán,A. I. Gral. Mariano Escobedo,1:30,16:39,lun 06:09PM CST
+VIV1337,A. I. Xoxocotlán,A. I. Benito Juárez,0:42,17:09,lun 05:51PM CST
+SLI2037,A. I. Xoxocotlán,A. I. Benito Juárez,0:48,18:46,lun 07:34PM CST
+VOI543,A. I. Xoxocotlán,A. I. Gral. Abelardo L. Rodríguez,4:32,20:00,lun 10:32PM PDT
+TAO462,A. N. Lic. Miguel de la Madrid,A. I. Benito Juárez,1:23,8:15,09:38AM CST
