@@ -5,61 +5,248 @@
  */
 package appaeropuertos;
 
-import java.awt.Graphics;
-import java.awt.Image;
-import javax.swing.ImageIcon;
-import javax.swing.JPanel;
+import grafos.Arista;
+import grafos.Grafo;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
  * @author luisr
  */
-class Imagenes extends JPanel {
+public class VuelosDias {
 
-    private Image imagen;
+    public static Grafo gr = new Grafo("Grafo creado");
 
-    @Override
-    public void paint(Graphics g) {
-        imagen = new ImageIcon(getClass().getResource("/Imagenes/Cla.jpg")).getImage();
-        g.drawImage(imagen, 0, 0, getWidth(), getHeight(), this);
-        setOpaque(false);
-        super.paint(g);
+    public static int convHoraMin(String a) {
+        String hora[] = a.split(":");
+        int h = Integer.parseInt(hora[0]) * 60;
+        int m = Integer.parseInt(hora[1]);
+        int costo = h + m;
+        System.out.println("Costo: " + costo);
+        return costo;
     }
-}
 
-class Logo extends JPanel {
+    public static void diaToSwitch(String d) {
+        
+        int dia = 0;
+        //Domingo 0
+        //Lunes 1
+        //Martes 2
+        //Miercoles 3
+        //ueves 4
+        //Viernes 5
+        //Sabado 6
+        if (d.equals("Sun")) {
+            dia = 0;
+        } else if (d.equals("Mon")) {
+            dia = 1;
+        } else if (d.equals("Tue")) {
+            dia = 2;
+        } else if (d.equals("Wed")) {
+            dia = 3;
+        } else if (d.equals("Thu")) {
+            dia = 4;
+        } else if (d.equals("Fri")) {
+            dia = 5;
+        } else if (d.equals("Sat")) {
+            dia = 6;
+        }
 
-    private Image imagen;
+        //Switch para leer el archivo de vuelos de x dia
+        switch (dia) {
+            case 0:
+                try (BufferedReader lunes = new BufferedReader(new FileReader("D:\\Programación\\AppAeropuertos\\src\\InfoVuelos\\Domingo.csv"))) {
+                    String row;
+                    while ((row = lunes.readLine()) != null) {
+                        if (row.startsWith("Numero")) {
+                            System.out.println("Primera linea" + row);
+                        } else {
+                            String[] linea = row.split(",");
+                            gr.addNodo(linea[1]);
+                            gr.addNodo(linea[2]);
+                            gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                        }
 
-    @Override
-    public void paint(Graphics g) {
-        imagen = new ImageIcon(getClass().getResource("/Imagenes/Logo.png")).getImage();
-        g.drawImage(imagen, 0, 0, getWidth(), getHeight(), this);
-        setOpaque(false);
-        super.paint(g);
+                    }
+                    System.out.println(gr);
+                } catch (IOException ex) {
+                    Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                break;
+
+            case 1:
+                try (BufferedReader lunes = new BufferedReader(new FileReader("D:\\Programación\\AppAeropuertos\\src\\InfoVuelos\\Lunes.csv"))) {
+                    String row;
+                    while ((row = lunes.readLine()) != null) {
+                        if (row.startsWith("Numero")) {
+                            System.out.println("Primera linea" + row);
+                        } else {
+                            String[] linea = row.split(",");
+                            gr.addNodo(linea[1]);
+                            gr.addNodo(linea[2]);
+                            gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                        }
+
+                    }
+                    System.out.println(gr);
+                } catch (IOException ex) {
+                    Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                break;
+
+            case 2:
+                try (BufferedReader lunes = new BufferedReader(new FileReader("D:\\Programación\\AppAeropuertos\\src\\InfoVuelos\\Martes.csv"))) {
+                    String row;
+                    while ((row = lunes.readLine()) != null) {
+                        if (row.startsWith("Numero")) {
+                            System.out.println("Primera linea" + row);
+                        } else {
+                            String[] linea = row.split(",");
+                            gr.addNodo(linea[1]);
+                            gr.addNodo(linea[2]);
+                            gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                        }
+
+                    }
+                    System.out.println(gr);
+                } catch (IOException ex) {
+                    Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                break;
+
+            case 3:
+                try (BufferedReader lunes = new BufferedReader(new FileReader("D:\\Programación\\AppAeropuertos\\src\\InfoVuelos\\Miercoles.csv"))) {
+                    String row;
+                    while ((row = lunes.readLine()) != null) {
+                        if (row.startsWith("Numero")) {
+                            System.out.println("Primera linea" + row);
+                        } else {
+                            String[] linea = row.split(",");
+                            gr.addNodo(linea[1]);
+                            gr.addNodo(linea[2]);
+                            gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                        }
+
+                    }
+                    System.out.println(gr);
+                } catch (IOException ex) {
+                    Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                break;
+
+            case 4:
+                try (BufferedReader lunes = new BufferedReader(new FileReader("D:\\Programación\\AppAeropuertos\\src\\InfoVuelos\\Jueves.csv"))) {
+                    String row;
+                    while ((row = lunes.readLine()) != null) {
+                        if (row.startsWith("Numero")) {
+                            System.out.println("Primera linea" + row);
+                        } else {
+                            String[] linea = row.split(",");
+                            gr.addNodo(linea[1]);
+                            gr.addNodo(linea[2]);
+                            gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                        }
+
+                    }
+                    System.out.println(gr);
+                } catch (IOException ex) {
+                    Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                break;
+
+            case 5:
+                try (BufferedReader lunes = new BufferedReader(new FileReader("D:\\Programación\\AppAeropuertos\\src\\InfoVuelos\\Viernes.csv"))) {
+                    String row;
+                    while ((row = lunes.readLine()) != null) {
+                        if (row.startsWith("Numero")) {
+                            System.out.println("Primera linea" + row);
+                        } else {
+                            String[] linea = row.split(",");
+                            gr.addNodo(linea[1]);
+                            gr.addNodo(linea[2]);
+                            gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                        }
+
+                    }
+                    System.out.println(gr);
+                } catch (IOException ex) {
+                    Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                break;
+
+            case 6:
+                try (BufferedReader lunes = new BufferedReader(new FileReader("D:\\Programación\\AppAeropuertos\\src\\InfoVuelos\\Sabado.csv"))) {
+                    String row;
+                    while ((row = lunes.readLine()) != null) {
+                        if (row.startsWith("Numero")) {
+                            System.out.println("Primera linea" + row);
+                        } else {
+                            String[] linea = row.split(",");
+                            gr.addNodo(linea[1]);
+                            gr.addNodo(linea[2]);
+                            gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                        }
+
+                    }
+                    System.out.println(gr);
+                } catch (IOException ex) {
+                    Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                break;
+        }
     }
-}
-class Mapa extends JPanel {
 
-    private Image imagen;
+    public static void Dijkstra(String O, String D) {
+        System.out.println("IMPRESION 1" + O + D);
+        System.out.println("\nIMPRESION 2" + gr);
+        ArrayList<Arista> array = new ArrayList<>();
 
-    @Override
-    public void paint(Graphics g) {
-        imagen = new ImageIcon(getClass().getResource("/Imagenes/mapa.png")).getImage();
-        g.drawImage(imagen, 0, 0, getWidth(), getHeight(), this);
-        setOpaque(false);
-        super.paint(g);
+        ArrayList<ArrayList<Arista>> ArrayDeCaminos = new ArrayList();
+
+        System.out.println("Funcion BuscaFinal");
+        gr.BuscaFinal(O, D, array, ArrayDeCaminos);
+
+        System.out.println("Array De Caminos");
+        System.out.println(ArrayDeCaminos);
+        System.out.println(" ");
+
+        // COSTOS
+        if (!ArrayDeCaminos.isEmpty()) {
+
+            int min = 9999999;
+            String Ccorto = null;
+            for (int i = 0; i < ArrayDeCaminos.size(); i++) {
+                int s = 0;
+                System.out.println(ArrayDeCaminos.get(i));
+                for (int j = 0; j < ArrayDeCaminos.get(i).size(); j++) {
+                    System.out.println("    --->" + ArrayDeCaminos.get(i).get(j).costo);
+                    s = ArrayDeCaminos.get(i).get(j).costo + s;
+
+                }
+
+                System.out.println(s);
+
+                if (s < min) {
+                    min = s;
+                    Ccorto = ArrayDeCaminos.get(i).toString();
+
+                }
+
+                System.out.println("");
+
+            }
+
+            System.out.println("El camino minimo de " + O + " a " + D + " cuesta "
+                    + min + " y la ruta es " + Ccorto);
+
+        } else {
+            System.out.println("No hay camino de " + O + " a " + D);
+        }
     }
-}
-class Boleto extends JPanel {
 
-    private Image imagen;
-
-    @Override
-    public void paint(Graphics g) {
-        imagen = new ImageIcon(getClass().getResource("/Imagenes/Boleto.png")).getImage();
-        g.drawImage(imagen, 0, 0, getWidth(), getHeight(), this);
-        setOpaque(false);
-        super.paint(g);
-    }
 }

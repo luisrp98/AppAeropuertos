@@ -5,13 +5,10 @@
  */
 package appaeropuertos;
 
-import static com.sun.java.accessibility.util.AWTEventMonitor.addItemListener;
+import grafos.Grafo;
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -25,26 +22,25 @@ import javax.swing.JOptionPane;
  *
  * @author luisr
  */
-
 public class Ventana1 extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Ventana1
-     */
+    //Clase de imagenes para la parte grafica
     Imagenes i = new Imagenes();
+    //Variable para pasar de ventana solo si esta en true, true = todos los campos estan llenos
     public static boolean sig = false;
-    public static String Nombre, DEP, ARR,Vuelo, HoraSalida;
+    //Variables publicas que se utilizan
+    public static String Nombre, DEP, ARR, Vuelo, HoraSalida;
 
-    public Ventana1() throws FileNotFoundException{
+    public Ventana1() throws FileNotFoundException {
+        //Parte grafica
         initComponents();
-
         this.setResizable(false);
         this.pack();
         jPanel1.setBackground(new Color(160, 160, 241));
         this.setLocationRelativeTo(null);
         this.setVisible(true);
-//D:\Programación\AppAeropuertos\src\InfoVuelos\Lunes.csv
-//D:\Programación\AppAeropuertos\src\Imagenes\AeropuertosNombres.csv
+
+        //Try catch que lee el archivo que tiene los nombres de los aeropuertos para las opciones
         try (BufferedReader csvReader = new BufferedReader(new FileReader("D:\\Programación\\AppAeropuertos\\src\\Imagenes\\AeropuertosNombres.csv"))) {
             String row;
             while ((row = csvReader.readLine()) != null) {
@@ -58,7 +54,6 @@ public class Ventana1 extends javax.swing.JFrame {
         } catch (IOException ex) {
             Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
 
     /**
@@ -115,11 +110,6 @@ public class Ventana1 extends javax.swing.JFrame {
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
-            }
-        });
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
             }
         });
 
@@ -214,60 +204,59 @@ public class Ventana1 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
+        //Obtencion de las respuestas puestas en los campos 
         String nombreIntroducido = jTextField1.getText().replaceAll(" ", "");
         String seleccion = (String) jComboBox2.getSelectedItem();
         String seleccion2 = (String) jComboBox3.getSelectedItem();
         Date fechaSeleccionada = jDateChooser1.getDate();
-        System.out.println(fechaSeleccionada);
 
-        if (nombreIntroducido.length() == 0) {
+        //Verifica que todos los campos esten llenos
+        if (nombreIntroducido.length() == 0) { //Nombre
             JOptionPane.showMessageDialog(null, "Introduzca su nombre");
             jTextField1.setText("");
-        } else if (fechaSeleccionada == null) {
+        } else if (fechaSeleccionada == null) { //Fecha
             JOptionPane.showMessageDialog(null, "Selecciona un fecha para volar");
-
-        } else if ("- Selecciona aeropuerto -".equals(seleccion)) {
+        } else if ("- Selecciona aeropuerto -".equals(seleccion)) { //Aeropuerto salida
             JOptionPane.showMessageDialog(null, "Selecciona un aeropuerto de salida");
-        } else if ("- Selecciona aeropuerto -".equals(seleccion2)) {
+        } else if ("- Selecciona aeropuerto -".equals(seleccion2)) { //Aeropuerto destino
             JOptionPane.showMessageDialog(null, "Selecciona un aeropuerto de destino");
-
-        } else {
+        } else { //Si todo esta lleno, sig = true para pasar a la siguiente ventana
             sig = true;
         }
         //
         if (sig == true) {
+            //Guarda en las variables publicas datos que se usan mas adelante
             Nombre = jTextField1.getText();
             DEP = (String) jComboBox2.getSelectedItem();
             ARR = (String) jComboBox3.getSelectedItem();
 
+            //Llamammiento a la otra ventana
             Ventana2 dos = new Ventana2();
             dos.setVisible(true);
             this.dispose();
+
             //
-            Date fechaIntroducida = jDateChooser1.getDate();
+            String fechaIntroducida = jDateChooser1.getDate().toString();
             System.out.println(fechaIntroducida);
+            String dia = fechaIntroducida.substring(0, 3);
+            System.out.println(dia); //Bandera
+            VuelosDias.diaToSwitch(dia);
+            VuelosDias.Dijkstra(DEP, ARR);
         }
 
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
         // TODO add your handling code here:
+        //Listener
         jComboBox2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
                 System.out.println(jComboBox2.getSelectedItem());
-
             }
         });
-
-
     }//GEN-LAST:event_jComboBox2ActionPerformed
 
     /**

@@ -16,11 +16,10 @@ import java.util.logging.Logger;
  */
 public class Ventana3 extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Ventana1
-     */
+    //Clase de imagenes para la parte grafica
     Imagenes i = new Imagenes();
 
+    //Variables para rellenar el boleto
     String vuelo, nombre, dep, arr, horaAbordaje, terminal;
     char asiento;
     int codigoAscii = (int) Math.floor(Math.random() * (122 - 97) + 97);
@@ -28,7 +27,8 @@ public class Ventana3 extends javax.swing.JFrame {
     int numeroTerminal = (int) Math.floor(Math.random() * 4 + 1);
 
     public Ventana3() throws IOException {
-
+        
+        //Parte grafica
         initComponents();
         this.setResizable(false);
         this.pack();
@@ -36,6 +36,7 @@ public class Ventana3 extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         this.setVisible(true);
 
+        //Cambia los nombres de los jLabels
         asiento = (char) codigoAscii;
 
         //Parte Izq
@@ -371,6 +372,7 @@ public class Ventana3 extends javax.swing.JFrame {
 
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
         // TODO add your handling code here:
+        //Llamammiento a la otra ventana
         Ventana2 dos = new Ventana2();
         dos.setVisible(true);
         this.dispose();
@@ -378,6 +380,7 @@ public class Ventana3 extends javax.swing.JFrame {
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
         // TODO add your handling code here:
+        //Llamammiento a la otra ventana
         Ventana4 cuatro = new Ventana4();
         cuatro.setVisible(true);
         this.dispose();

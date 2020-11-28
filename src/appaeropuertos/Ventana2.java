@@ -6,7 +6,6 @@
 package appaeropuertos;
 
 import java.awt.Color;
-import java.awt.Dimension;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -17,12 +16,11 @@ import java.util.logging.Logger;
  */
 public class Ventana2 extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Ventana1
-     */
+    //Clase de imagenes para la parte grafica
     Imagenes i = new Imagenes();
 
     public Ventana2() {
+        //Parte grafica
         initComponents();
         this.setResizable(false);
         this.pack();
@@ -46,6 +44,7 @@ public class Ventana2 extends javax.swing.JFrame {
         Sig = new javax.swing.JButton();
         jPanel3 = new Mapa();
         Atras = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1000, 800));
@@ -90,6 +89,8 @@ public class Ventana2 extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setText("EN ESTA PARTE IRA EL CAMINO DE LOS NODOS, SI QUEDA TIEMPO HAREMOS ALGO GRAFICO, SI NO PURO TEXTO");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -101,7 +102,10 @@ public class Ventana2 extends javax.swing.JFrame {
                         .addComponent(Atras))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(31, 31, 31)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel1)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -117,7 +121,9 @@ public class Ventana2 extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap(81, Short.MAX_VALUE)
+                        .addContainerGap()
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -149,8 +155,8 @@ public class Ventana2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void SigMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SigMouseClicked
+        //Llamammiento a la otra ventana
         try {
-            // TODO add your handling code here:
             Ventana3 tres = new Ventana3();
             tres.setVisible(true);
             this.dispose();
@@ -160,7 +166,7 @@ public class Ventana2 extends javax.swing.JFrame {
     }//GEN-LAST:event_SigMouseClicked
 
     private void AtrasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AtrasMouseClicked
-         //TODO add your handling code here:
+        //Llamammiento a la otra ventana
         Ventana1 uno;
         try {
             uno = new Ventana1();
@@ -211,6 +217,7 @@ public class Ventana2 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Atras;
     private javax.swing.JButton Sig;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

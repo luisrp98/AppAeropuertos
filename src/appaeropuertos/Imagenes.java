@@ -14,6 +14,9 @@ import javax.swing.JPanel;
  *
  * @author luisr
  */
+
+//Cada una de estas clases carga las imagenes que se utilizan en el JFrame, su referencia es el nombre de clase
+
 class Imagenes extends JPanel {
 
     private Image imagen;
