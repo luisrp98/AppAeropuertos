@@ -7,10 +7,13 @@ package appaeropuertos;
 
 import grafos.Arista;
 import grafos.Grafo;
+
+import java.util.ArrayList;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -29,10 +32,11 @@ public class VuelosDias {
         int costo = h + m;
         System.out.println("Costo: " + costo);
         return costo;
+
     }
 
     public static void diaToSwitch(String d) {
-        
+
         int dia = 0;
         //Domingo 0
         //Lunes 1
@@ -74,8 +78,10 @@ public class VuelosDias {
 
                     }
                     System.out.println(gr);
+
                 } catch (IOException ex) {
-                    Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Ventana1.class
+                            .getName()).log(Level.SEVERE, null, ex);
                 }
                 break;
 
@@ -94,8 +100,10 @@ public class VuelosDias {
 
                     }
                     System.out.println(gr);
+
                 } catch (IOException ex) {
-                    Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Ventana1.class
+                            .getName()).log(Level.SEVERE, null, ex);
                 }
                 break;
 
@@ -114,8 +122,10 @@ public class VuelosDias {
 
                     }
                     System.out.println(gr);
+
                 } catch (IOException ex) {
-                    Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Ventana1.class
+                            .getName()).log(Level.SEVERE, null, ex);
                 }
                 break;
 
@@ -134,8 +144,10 @@ public class VuelosDias {
 
                     }
                     System.out.println(gr);
+
                 } catch (IOException ex) {
-                    Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Ventana1.class
+                            .getName()).log(Level.SEVERE, null, ex);
                 }
                 break;
 
@@ -154,8 +166,10 @@ public class VuelosDias {
 
                     }
                     System.out.println(gr);
+
                 } catch (IOException ex) {
-                    Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Ventana1.class
+                            .getName()).log(Level.SEVERE, null, ex);
                 }
                 break;
 
@@ -174,8 +188,10 @@ public class VuelosDias {
 
                     }
                     System.out.println(gr);
+
                 } catch (IOException ex) {
-                    Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Ventana1.class
+                            .getName()).log(Level.SEVERE, null, ex);
                 }
                 break;
 
@@ -194,8 +210,10 @@ public class VuelosDias {
 
                     }
                     System.out.println(gr);
+
                 } catch (IOException ex) {
-                    Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Ventana1.class
+                            .getName()).log(Level.SEVERE, null, ex);
                 }
                 break;
         }

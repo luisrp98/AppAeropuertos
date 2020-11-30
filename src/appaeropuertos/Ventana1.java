@@ -38,7 +38,6 @@ public class Ventana1 extends javax.swing.JFrame {
         jPanel1.setBackground(new Color(160, 160, 241));
         this.setLocationRelativeTo(null);
         this.setVisible(true);
-
         //Try catch que lee el archivo que tiene los nombres de los aeropuertos para las opciones
         try (BufferedReader csvReader = new BufferedReader(new FileReader("D:\\Programación\\AppAeropuertos\\src\\Imagenes\\AeropuertosNombres.csv"))) {
             String row;
@@ -53,6 +52,16 @@ public class Ventana1 extends javax.swing.JFrame {
         } catch (IOException ex) {
             Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
         }
+
+        try (BufferedReader lunes = new BufferedReader(new FileReader("D:\\Programación\\AppAeropuertos\\src\\InfoVuelos\\Lunes.csv"))) {
+            String row;
+            while ((row = lunes.readLine()) != null) {
+                System.out.println(row);
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
     }
 
     /**
@@ -242,7 +251,7 @@ public class Ventana1 extends javax.swing.JFrame {
             String dia = fechaIntroducida.substring(0, 3);
             System.out.println(dia); //Bandera
             VuelosDias.diaToSwitch(dia);
-            VuelosDias.Dijkstra(DEP, ARR);
+
         }
 
     }//GEN-LAST:event_jButton1MouseClicked
