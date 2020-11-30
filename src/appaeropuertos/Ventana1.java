@@ -46,22 +46,10 @@ public class Ventana1 extends javax.swing.JFrame {
                 // do something with the data
                 jComboBox2.addItem(row);
                 jComboBox3.addItem(row);
-
-            }
-
-        } catch (IOException ex) {
-            Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-        try (BufferedReader lunes = new BufferedReader(new FileReader("D:\\Programación\\AppAeropuertos\\src\\InfoVuelos\\Lunes.csv"))) {
-            String row;
-            while ((row = lunes.readLine()) != null) {
-                System.out.println(row);
             }
         } catch (IOException ex) {
             Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
 
     /**
@@ -251,7 +239,7 @@ public class Ventana1 extends javax.swing.JFrame {
             String dia = fechaIntroducida.substring(0, 3);
             System.out.println(dia); //Bandera
             VuelosDias.diaToSwitch(dia);
-
+            VuelosDias.Dijkstra(DEP, ARR);
         }
 
     }//GEN-LAST:event_jButton1MouseClicked
