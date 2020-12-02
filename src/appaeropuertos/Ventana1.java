@@ -5,6 +5,7 @@
  */
 package appaeropuertos;
 
+
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -23,6 +24,7 @@ import javax.swing.JOptionPane;
  */
 public class Ventana1 extends javax.swing.JFrame {
 
+//    public static Grafo Grafo = new Grafo();
     //Clase de imagenes para la parte grafica
     Imagenes i = new Imagenes();
     //Variable para pasar de ventana solo si esta en true, true = todos los campos estan llenos
@@ -42,10 +44,9 @@ public class Ventana1 extends javax.swing.JFrame {
         try (BufferedReader csvReader = new BufferedReader(new FileReader("D:\\Programación\\AppAeropuertos\\src\\Imagenes\\AeropuertosNombres.csv"))) {
             String row;
             while ((row = csvReader.readLine()) != null) {
-                String[] data = row.split(",");
-                // do something with the data
                 jComboBox2.addItem(row);
                 jComboBox3.addItem(row);
+                row = VuelosDias.espacio(row);
             }
         } catch (IOException ex) {
             Logger.getLogger(Ventana1.class.getName()).log(Level.SEVERE, null, ex);
@@ -202,6 +203,7 @@ public class Ventana1 extends javax.swing.JFrame {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
+
         //Obtencion de las respuestas puestas en los campos 
         String nombreIntroducido = jTextField1.getText().replaceAll(" ", "");
         String seleccion = (String) jComboBox2.getSelectedItem();
@@ -228,6 +230,12 @@ public class Ventana1 extends javax.swing.JFrame {
             DEP = (String) jComboBox2.getSelectedItem();
             ARR = (String) jComboBox3.getSelectedItem();
 
+            String O = VuelosDias.espacio((String) jComboBox2.getSelectedItem());
+            String D = VuelosDias.espacio((String) jComboBox3.getSelectedItem());
+            String[] Origen = O.split("\\(");
+            String[] Destino = D.split("\\(");
+            System.out.println(Origen[0] + "   aaaaaaaaaaaaaa    " + Destino[0]);
+
             //Llamammiento a la otra ventana
             Ventana2 dos = new Ventana2();
             dos.setVisible(true);
@@ -238,8 +246,7 @@ public class Ventana1 extends javax.swing.JFrame {
             System.out.println(fechaIntroducida);
             String dia = fechaIntroducida.substring(0, 3);
             System.out.println(dia); //Bandera
-            VuelosDias.diaToSwitch(dia);
-            VuelosDias.Dijkstra(DEP, ARR);
+            //Grafo.imprimeRecorridoVMC(Origen[0], Destino[0]);
         }
 
     }//GEN-LAST:event_jButton1MouseClicked

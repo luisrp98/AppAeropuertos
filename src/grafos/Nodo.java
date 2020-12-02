@@ -12,10 +12,10 @@ package grafos;
  * @author marianaare
  */
 public class Nodo {
-    public  Nodo apuntador;
-    public  String texto;
-    public  int valor;
-    public  Object transporte;
+    public static Nodo apuntador;
+    public static String texto;
+    public static int valor;
+    public static Object transporte;
     public Nodo(){
     }
     public Nodo(String t,int n){

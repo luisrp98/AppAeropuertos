@@ -5,15 +5,10 @@
  */
 package appaeropuertos;
 
-import grafos.Arista;
 import grafos.Grafo;
-
-import java.util.ArrayList;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -23,16 +18,23 @@ import java.util.logging.Logger;
  */
 public class VuelosDias {
 
-    public static Grafo gr = new Grafo("Grafo creado");
+    public static Grafo gr = new Grafo();
 
     public static int convHoraMin(String a) {
         String hora[] = a.split(":");
         int h = Integer.parseInt(hora[0]) * 60;
         int m = Integer.parseInt(hora[1]);
         int costo = h + m;
-        System.out.println("Costo: " + costo);
+        // System.out.println("Costo: " + costo);
         return costo;
 
+    }
+
+    public static String espacio(String a) {
+        a = a.trim();
+        a = a.toUpperCase();
+        a = a.replace(" ", "");
+        return a;
     }
 
     public static void diaToSwitch(String d) {
@@ -61,7 +63,7 @@ public class VuelosDias {
             dia = 6;
         }
 
-        //Switch para leer el archivo de vuelos de x dia
+        //Switch para leer el archivo de vuelos de el dia seleccionado
         switch (dia) {
             case 0:
                 try (BufferedReader lunes = new BufferedReader(new FileReader("D:\\Programación\\AppAeropuertos\\src\\InfoVuelos\\Domingo.csv"))) {
@@ -70,6 +72,7 @@ public class VuelosDias {
                         if (row.startsWith("Numero")) {
                             System.out.println("Primera linea" + row);
                         } else {
+                            row = espacio(row);
                             String[] linea = row.split(",");
                             gr.addNodo(linea[1]);
                             gr.addNodo(linea[2]);
@@ -77,7 +80,6 @@ public class VuelosDias {
                         }
 
                     }
-                    System.out.println(gr);
 
                 } catch (IOException ex) {
                     Logger.getLogger(Ventana1.class
@@ -99,7 +101,6 @@ public class VuelosDias {
                         }
 
                     }
-                    System.out.println(gr);
 
                 } catch (IOException ex) {
                     Logger.getLogger(Ventana1.class
@@ -121,7 +122,6 @@ public class VuelosDias {
                         }
 
                     }
-                    System.out.println(gr);
 
                 } catch (IOException ex) {
                     Logger.getLogger(Ventana1.class
@@ -143,7 +143,6 @@ public class VuelosDias {
                         }
 
                     }
-                    System.out.println(gr);
 
                 } catch (IOException ex) {
                     Logger.getLogger(Ventana1.class
@@ -165,7 +164,6 @@ public class VuelosDias {
                         }
 
                     }
-                    System.out.println(gr);
 
                 } catch (IOException ex) {
                     Logger.getLogger(Ventana1.class
@@ -187,7 +185,6 @@ public class VuelosDias {
                         }
 
                     }
-                    System.out.println(gr);
 
                 } catch (IOException ex) {
                     Logger.getLogger(Ventana1.class
@@ -209,7 +206,6 @@ public class VuelosDias {
                         }
 
                     }
-                    System.out.println(gr);
 
                 } catch (IOException ex) {
                     Logger.getLogger(Ventana1.class
@@ -219,52 +215,49 @@ public class VuelosDias {
         }
     }
 
-    public static void Dijkstra(String O, String D) {
-        System.out.println("IMPRESION 1" + O + D);
-        System.out.println("\nIMPRESION 2" + gr);
-        ArrayList<Arista> array = new ArrayList<>();
-
-        ArrayList<ArrayList<Arista>> ArrayDeCaminos = new ArrayList();
-
-        System.out.println("Funcion BuscaFinal");
-        gr.BuscaFinal(O, D, array, ArrayDeCaminos);
-
-        System.out.println("Array De Caminos");
-        System.out.println(ArrayDeCaminos);
-        System.out.println(" ");
-
-        // COSTOS
-        if (!ArrayDeCaminos.isEmpty()) {
-
-            int min = 9999999;
-            String Ccorto = null;
-            for (int i = 0; i < ArrayDeCaminos.size(); i++) {
-                int s = 0;
-                System.out.println(ArrayDeCaminos.get(i));
-                for (int j = 0; j < ArrayDeCaminos.get(i).size(); j++) {
-                    System.out.println("    --->" + ArrayDeCaminos.get(i).get(j).costo);
-                    s = ArrayDeCaminos.get(i).get(j).costo + s;
-
-                }
-
-                System.out.println(s);
-
-                if (s < min) {
-                    min = s;
-                    Ccorto = ArrayDeCaminos.get(i).toString();
-
-                }
-
-                System.out.println("");
-
-            }
-
-            System.out.println("El camino minimo de " + O + " a " + D + " cuesta "
-                    + min + " y la ruta es " + Ccorto);
-
-        } else {
-            System.out.println("No hay camino de " + O + " a " + D);
-        }
-    }
-
+//    public static void Dijkstra(String O, String D) {
+//        ArrayList<Arista> array = new ArrayList<>();
+//
+//        ArrayList<ArrayList<Arista>> ArrayDeCaminos = new ArrayList();
+//
+//        System.out.println("Funcion BuscaFinal");
+//        gr.BuscaFinal(O, D, array, ArrayDeCaminos);
+//
+//        System.out.println("Array De Caminos");
+//        System.out.println(ArrayDeCaminos);
+//        System.out.println(" ");
+//
+//        // COSTOS
+//        if (!ArrayDeCaminos.isEmpty()) {
+//
+//            int min = 9999999;
+//            String Ccorto = null;
+//            for (int i = 0; i < ArrayDeCaminos.size(); i++) {
+//                int s = 0;
+//                System.out.println(ArrayDeCaminos.get(i));
+//                for (int j = 0; j < ArrayDeCaminos.get(i).size(); j++) {
+//                    System.out.println("    --->" + ArrayDeCaminos.get(i).get(j).costo);
+//                    s = ArrayDeCaminos.get(i).get(j).costo + s;
+//
+//                }
+//
+//                System.out.println(s);
+//
+//                if (s < min) {
+//                    min = s;
+//                    Ccorto = ArrayDeCaminos.get(i).toString();
+//
+//                }
+//
+//                System.out.println("");
+//
+//            }
+//
+//            System.out.println("El camino minimo de " + O + " a " + D + " cuesta "
+//                    + min + " y la ruta es " + Ccorto);
+//
+//        } else {
+//            System.out.println("No hay camino de " + O + " a " + D);
+//        }
+//    }
 }

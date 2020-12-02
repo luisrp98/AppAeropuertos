@@ -63,9 +63,9 @@ public class Grafo {
             } else {
                 temp.sigHermano = new NodoG(n);
             }
-            System.out.println("Nodo: " + n + " Agregado");
+            //System.out.println("Nodo: " + n + " Agregado");
         } else {
-            System.out.println("Nodo: " + n + " Ya Existe");
+            //System.out.println("Nodo: " + n + " Ya Existe");
         }
     }
 
