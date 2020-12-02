@@ -5,16 +5,17 @@ package grafos;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author mariana.are
  */
 public class NodoDoble extends Nodo {
-    NodoDoble anterior;
-     NodoDoble siguiente;
-    NodoDoble(){
-        
+
+    public static NodoDoble anterior;
+    public static NodoDoble siguiente;
+
+    public NodoDoble() {
+
     }
-    
+
 }
