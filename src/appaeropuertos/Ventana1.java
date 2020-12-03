@@ -5,7 +5,6 @@
  */
 package appaeropuertos;
 
-
 import grafos.Grafo;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -15,6 +14,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Date;
+import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -25,13 +25,28 @@ import javax.swing.JOptionPane;
  */
 public class Ventana1 extends javax.swing.JFrame {
 
+    public static String Tiempo(LinkedList a) {
+        String linea, totaltxt = null;
+        int tmp;
+        double total = 0;
+        for (int i = 0; i < a.size(); i++) {
+            linea = a.get(i).toString();
+            String[] split = linea.split("-");
+            tmp = Integer.parseInt(split[1]);
+            total = total + tmp;
+
+        }
+        total = total / 60;
+        totaltxt = String.valueOf(total);
+        return totaltxt;
+    }
 //    public static Grafo Grafo = new Grafo();
     //Clase de imagenes para la parte grafica
     Imagenes i = new Imagenes();
     //Variable para pasar de ventana solo si esta en true, true = todos los campos estan llenos
     public static boolean sig = false;
     //Variables publicas que se utilizan
-    public static String Nombre, DEP, ARR, Vuelo, HoraSalida;
+    public static String Nombre, DEP, ARR, Vuelo, HoraSalida, Camino, Tiempo;
 
     public Ventana1() throws FileNotFoundException {
         //Parte grafica
@@ -221,6 +236,8 @@ public class Ventana1 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Selecciona un aeropuerto de salida");
         } else if ("- Selecciona aeropuerto -".equals(seleccion2)) { //Aeropuerto destino
             JOptionPane.showMessageDialog(null, "Selecciona un aeropuerto de destino");
+        } else if (seleccion.equals(seleccion2)) {
+            JOptionPane.showMessageDialog(null, "Selecciona aeropuertos diferentes");
         } else { //Si todo esta lleno, sig = true para pasar a la siguiente ventana
             sig = true;
         }
@@ -237,19 +254,23 @@ public class Ventana1 extends javax.swing.JFrame {
             String[] Destino = D.split("\\(");
             System.out.println(Origen[0] + "   aaaaaaaaaaaaaa    " + Destino[0]);
 
-            //Llamammiento a la otra ventana
-            Ventana2 dos = new Ventana2();
-            dos.setVisible(true);
-            this.dispose();
-
             //
             String fechaIntroducida = jDateChooser1.getDate().toString();
             System.out.println(fechaIntroducida);
             String dia = fechaIntroducida.substring(0, 3);
             VuelosDias.diaToSwitch(dia);
-            System.out.println("Dia "+dia); //Bandera
+            System.out.println("Dia " + dia); //Bandera
 
             Grafo.imprimeRecorridoVMC(Origen[0], Destino[0]);
+            Camino = Grafo.getRuta();
+            Tiempo = Tiempo(Grafo.costos);
+            System.out.println(Tiempo);
+
+            //Llamammiento a la otra ventana
+            Ventana2 dos = new Ventana2();
+            dos.setVisible(true);
+            this.dispose();
+
         }
 
     }//GEN-LAST:event_jButton1MouseClicked
@@ -335,4 +356,13 @@ public class Ventana1 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
+
+    public static String getCamino() {
+        return Camino;
+    }
+
+    public static void setCamino(String Camino) {
+        Ventana1.Camino = Camino;
+    }
+
 }

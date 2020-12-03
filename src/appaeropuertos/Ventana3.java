@@ -27,7 +27,7 @@ public class Ventana3 extends javax.swing.JFrame {
     int numeroTerminal = (int) Math.floor(Math.random() * 4 + 1);
 
     public Ventana3() throws IOException {
-        
+
         //Parte grafica
         initComponents();
         this.setResizable(false);
@@ -44,26 +44,22 @@ public class Ventana3 extends javax.swing.JFrame {
         jLabel_DEP.setText(Ventana1.DEP);
         jLabel_ARR.setText(Ventana1.ARR);
         jLabel_Asiento.setText(String.valueOf(asiento).toUpperCase() + numeroAsiento);
-        //SUSTITUIR POR ESTA
-        //jLabel_Vuelo.setText(Ventana1.Vuelo);
-        jLabel_Vuelo.setText("Vuelo pendiente");
+        jLabel_Vuelo.setText(Ventana1.Vuelo);
         jLabel_Terminal.setText(String.valueOf(numeroTerminal));
-        //SUSTITUIR POR ESTA
-        //jLabel_HoraAbordaje.setText(Ventana1.HoraSalida);
-        jLabel_HoraAbordaje.setText("Hora pendiente");
+        jLabel_HoraAbordaje.setText(Ventana1.HoraSalida);
+        jLabel_Vuelo.setText("VOI845");
+        jLabel_HoraAbordaje.setText("08:49");
 
         //Parte Der
         jLabel_Nombre1.setText(Ventana1.Nombre);
         jLabel_DEP1.setText(Ventana1.DEP);
         jLabel_ARR1.setText(Ventana1.ARR);
         jLabel_Asiento1.setText(String.valueOf(asiento).toUpperCase() + numeroAsiento);
-        //SUSTITUIR POR ESTA
-        //jLabel_Vuelo1.setText(Ventana1.Vuelo);
-        jLabel_Vuelo1.setText("Vuelo pendiente");
+        jLabel_Vuelo1.setText(Ventana1.Vuelo);
         jLabel_Terminal1.setText(String.valueOf(numeroTerminal));
-        //SUSTITUIR POR ESTA
-        //jLabel_HoraAbordaje1.setText(Ventana1.HoraSalida);
-        jLabel_HoraAbordaje1.setText("Hora pendiente");
+        jLabel_HoraAbordaje1.setText(Ventana1.HoraSalida);
+        jLabel_Vuelo1.setText("VOI845");
+        jLabel_HoraAbordaje1.setText("08:49");
 
     }
 

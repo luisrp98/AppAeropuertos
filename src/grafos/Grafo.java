@@ -14,6 +14,8 @@ public class Grafo {
     public static NodoG inicio;
     public static String nombre;
     public static String descripcion;
+    public static String ruta = "";
+    public static LinkedList costos = new LinkedList();
 
     public Grafo() {
         inicio = null;
@@ -291,6 +293,7 @@ public class Grafo {
             }
             System.out.println("");
         }
+        costos.add(menor);
         System.out.println("El arista de menor costo se supone que es: " + menor);
         System.out.println("El nodo al que apunta este arista es: " + lista.get(ubi));
 
@@ -311,12 +314,15 @@ public class Grafo {
         }
         //imprimo el camino de VMC
 
-        System.out.println(" el camino de " + o.nombre + " a " + d.nombre + " segun el algoritmo es: ");
+        System.out.println(" El camino de " + o.nombre + " a " + d.nombre + " segun el algoritmo es: ");
         for (int i = 0; i < lista.size(); i++) {
+            ruta = ruta + (String) lista.get(i).toString() + "\n";
             System.out.println(lista.get(i));
             System.out.println("|");
             System.out.println("V");
+            
         }
+        System.out.println(costos);
     }
 
     public void vmc(String origen, String destino) {
@@ -402,4 +408,13 @@ public class Grafo {
 
         return sb.toString();
     }
+
+    public static String getRuta() {
+        return ruta;
+    }
+
+    public static void setRuta(String ruta) {
+        Grafo.ruta = ruta;
+    }
+
 }

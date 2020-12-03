@@ -9,6 +9,8 @@ import grafos.Grafo;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.Normalizer;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -17,6 +19,8 @@ import java.util.logging.Logger;
  * @author luisr
  */
 public class VuelosDias {
+
+    public static int numeroDeVuelo;
 
     public static Grafo gr = new Grafo();
 
@@ -30,15 +34,47 @@ public class VuelosDias {
 
     }
 
+    public static String limpiarAcentos(String cadena) {
+        String limpio = null;
+        if (cadena != null) {
+            String valor = cadena;
+            valor = valor.toUpperCase();
+            // Normalizar texto para eliminar acentos, dieresis, cedillas y tildes
+            limpio = Normalizer.normalize(valor, Normalizer.Form.NFD);
+            // Quitar caracteres no ASCII excepto la enie, interrogacion que abre, exclamacion que abre, grados, U con dieresis.
+            limpio = limpio.replaceAll("[^\\p{ASCII}(N\u0303)(n\u0303)(\u00A1)(\u00BF)(\u00B0)(U\u0308)(u\u0308)]", "");
+            // Regresar a la forma compuesta, para poder comparar la enie con la tabla de valores
+            limpio = Normalizer.normalize(limpio, Normalizer.Form.NFC);
+        }
+        return limpio;
+    }
+
     public static String espacio(String a) {
         a = a.trim();
         a = a.toUpperCase();
+        a = limpiarAcentos(a);
         a = a.replace(" ", "");
         return a;
     }
 
+    public static boolean existe(ArrayList a, ArrayList b, String n1, String n2) {
+        for (int i = 0; i < a.size(); i++) {
+            if (n1.equals(a.get(i))) {
+                if (n2.equals(b.get(i))) {
+                    System.out.println("Conexion repetida " + i + " " + a.get(i) + "   " + b.get(i) + "  " + n1 + "    " + n2);
+                    return true;
+                }
+            }
+
+        }
+        return false;
+    }
+
     public static void diaToSwitch(String d) {
 
+        ArrayList<String> nodos1 = new ArrayList<String>();
+        ArrayList<String> nodos2 = new ArrayList<String>();
+        int c = 0;
         int dia = 0;
         //Domingo 0
         //Lunes 1
@@ -74,13 +110,24 @@ public class VuelosDias {
                         } else {
                             row = espacio(row);
                             String[] linea = row.split(",");
-                            gr.addNodo(linea[1]);
-                            gr.addNodo(linea[2]);
-                            gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                            if (nodos1.isEmpty()) {
+                                nodos1.add(linea[1]);
+                                nodos2.add(linea[2]);
+                                gr.addNodo(linea[1]);
+                                gr.addNodo(linea[2]);
+                                gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                            } else if (existe(nodos1, nodos2, linea[1], linea[2]) != true) {
+                                nodos1.add(linea[1]);
+                                nodos2.add(linea[2]);
+                                gr.addNodo(linea[1]);
+                                gr.addNodo(linea[2]);
+                                gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                                System.out.println(linea[1] + " " + linea[2] + " " + convHoraMin(linea[3]));
+                            }
                         }
 
                     }
-
+                    System.out.println("grafo" + gr);
                 } catch (IOException ex) {
                     Logger.getLogger(Ventana1.class
                             .getName()).log(Level.SEVERE, null, ex);
@@ -94,14 +141,25 @@ public class VuelosDias {
                         if (row.startsWith("Numero")) {
                             System.out.println("Primera linea" + row);
                         } else {
+                            row = espacio(row);
                             String[] linea = row.split(",");
-                            gr.addNodo(linea[1]);
-                            gr.addNodo(linea[2]);
-                            gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                            if (nodos1.isEmpty()) {
+                                nodos1.add(linea[1]);
+                                nodos2.add(linea[2]);
+                                gr.addNodo(linea[1]);
+                                gr.addNodo(linea[2]);
+                                gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                            } else if (existe(nodos1, nodos2, linea[1], linea[2]) != true) {
+                                nodos1.add(linea[1]);
+                                nodos2.add(linea[2]);
+                                gr.addNodo(linea[1]);
+                                gr.addNodo(linea[2]);
+                                gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                                System.out.println(linea[1] + " " + linea[2] + " " + convHoraMin(linea[3]));
+                            }
                         }
 
                     }
-
                 } catch (IOException ex) {
                     Logger.getLogger(Ventana1.class
                             .getName()).log(Level.SEVERE, null, ex);
@@ -115,10 +173,22 @@ public class VuelosDias {
                         if (row.startsWith("Numero")) {
                             System.out.println("Primera linea" + row);
                         } else {
+                            row = espacio(row);
                             String[] linea = row.split(",");
-                            gr.addNodo(linea[1]);
-                            gr.addNodo(linea[2]);
-                            gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                            if (nodos1.isEmpty()) {
+                                nodos1.add(linea[1]);
+                                nodos2.add(linea[2]);
+                                gr.addNodo(linea[1]);
+                                gr.addNodo(linea[2]);
+                                gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                            } else if (existe(nodos1, nodos2, linea[1], linea[2]) != true) {
+                                nodos1.add(linea[1]);
+                                nodos2.add(linea[2]);
+                                gr.addNodo(linea[1]);
+                                gr.addNodo(linea[2]);
+                                gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                                System.out.println(linea[1] + " " + linea[2] + " " + convHoraMin(linea[3]));
+                            }
                         }
 
                     }
@@ -136,14 +206,25 @@ public class VuelosDias {
                         if (row.startsWith("Numero")) {
                             System.out.println("Primera linea" + row);
                         } else {
+                            row = espacio(row);
                             String[] linea = row.split(",");
-                            gr.addNodo(linea[1]);
-                            gr.addNodo(linea[2]);
-                            gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                            if (nodos1.isEmpty()) {
+                                nodos1.add(linea[1]);
+                                nodos2.add(linea[2]);
+                                gr.addNodo(linea[1]);
+                                gr.addNodo(linea[2]);
+                                gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                            } else if (existe(nodos1, nodos2, linea[1], linea[2]) != true) {
+                                nodos1.add(linea[1]);
+                                nodos2.add(linea[2]);
+                                gr.addNodo(linea[1]);
+                                gr.addNodo(linea[2]);
+                                gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                                System.out.println(linea[1] + " " + linea[2] + " " + convHoraMin(linea[3]));
+                            }
                         }
 
                     }
-
                 } catch (IOException ex) {
                     Logger.getLogger(Ventana1.class
                             .getName()).log(Level.SEVERE, null, ex);
@@ -157,14 +238,25 @@ public class VuelosDias {
                         if (row.startsWith("Numero")) {
                             System.out.println("Primera linea" + row);
                         } else {
+                            row = espacio(row);
                             String[] linea = row.split(",");
-                            gr.addNodo(linea[1]);
-                            gr.addNodo(linea[2]);
-                            gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                            if (nodos1.isEmpty()) {
+                                nodos1.add(linea[1]);
+                                nodos2.add(linea[2]);
+                                gr.addNodo(linea[1]);
+                                gr.addNodo(linea[2]);
+                                gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                            } else if (existe(nodos1, nodos2, linea[1], linea[2]) != true) {
+                                nodos1.add(linea[1]);
+                                nodos2.add(linea[2]);
+                                gr.addNodo(linea[1]);
+                                gr.addNodo(linea[2]);
+                                gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                                System.out.println(linea[1] + " " + linea[2] + " " + convHoraMin(linea[3]));
+                            }
                         }
 
                     }
-
                 } catch (IOException ex) {
                     Logger.getLogger(Ventana1.class
                             .getName()).log(Level.SEVERE, null, ex);
@@ -178,14 +270,25 @@ public class VuelosDias {
                         if (row.startsWith("Numero")) {
                             System.out.println("Primera linea" + row);
                         } else {
+                            row = espacio(row);
                             String[] linea = row.split(",");
-                            gr.addNodo(linea[1]);
-                            gr.addNodo(linea[2]);
-                            gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                            if (nodos1.isEmpty()) {
+                                nodos1.add(linea[1]);
+                                nodos2.add(linea[2]);
+                                gr.addNodo(linea[1]);
+                                gr.addNodo(linea[2]);
+                                gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                            } else if (existe(nodos1, nodos2, linea[1], linea[2]) != true) {
+                                nodos1.add(linea[1]);
+                                nodos2.add(linea[2]);
+                                gr.addNodo(linea[1]);
+                                gr.addNodo(linea[2]);
+                                gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                                System.out.println(linea[1] + " " + linea[2] + " " + convHoraMin(linea[3]));
+                            }
                         }
 
                     }
-
                 } catch (IOException ex) {
                     Logger.getLogger(Ventana1.class
                             .getName()).log(Level.SEVERE, null, ex);
@@ -199,14 +302,25 @@ public class VuelosDias {
                         if (row.startsWith("Numero")) {
                             System.out.println("Primera linea" + row);
                         } else {
+                            row = espacio(row);
                             String[] linea = row.split(",");
-                            gr.addNodo(linea[1]);
-                            gr.addNodo(linea[2]);
-                            gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                            if (nodos1.isEmpty()) {
+                                nodos1.add(linea[1]);
+                                nodos2.add(linea[2]);
+                                gr.addNodo(linea[1]);
+                                gr.addNodo(linea[2]);
+                                gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                            } else if (existe(nodos1, nodos2, linea[1], linea[2]) != true) {
+                                nodos1.add(linea[1]);
+                                nodos2.add(linea[2]);
+                                gr.addNodo(linea[1]);
+                                gr.addNodo(linea[2]);
+                                gr.addArista(linea[1], linea[2], convHoraMin(linea[3]));
+                                System.out.println(linea[1] + " " + linea[2] + " " + convHoraMin(linea[3]));
+                            }
                         }
 
                     }
-
                 } catch (IOException ex) {
                     Logger.getLogger(Ventana1.class
                             .getName()).log(Level.SEVERE, null, ex);
@@ -215,49 +329,4 @@ public class VuelosDias {
         }
     }
 
-//    public static void Dijkstra(String O, String D) {
-//        ArrayList<Arista> array = new ArrayList<>();
-//
-//        ArrayList<ArrayList<Arista>> ArrayDeCaminos = new ArrayList();
-//
-//        System.out.println("Funcion BuscaFinal");
-//        gr.BuscaFinal(O, D, array, ArrayDeCaminos);
-//
-//        System.out.println("Array De Caminos");
-//        System.out.println(ArrayDeCaminos);
-//        System.out.println(" ");
-//
-//        // COSTOS
-//        if (!ArrayDeCaminos.isEmpty()) {
-//
-//            int min = 9999999;
-//            String Ccorto = null;
-//            for (int i = 0; i < ArrayDeCaminos.size(); i++) {
-//                int s = 0;
-//                System.out.println(ArrayDeCaminos.get(i));
-//                for (int j = 0; j < ArrayDeCaminos.get(i).size(); j++) {
-//                    System.out.println("    --->" + ArrayDeCaminos.get(i).get(j).costo);
-//                    s = ArrayDeCaminos.get(i).get(j).costo + s;
-//
-//                }
-//
-//                System.out.println(s);
-//
-//                if (s < min) {
-//                    min = s;
-//                    Ccorto = ArrayDeCaminos.get(i).toString();
-//
-//                }
-//
-//                System.out.println("");
-//
-//            }
-//
-//            System.out.println("El camino minimo de " + O + " a " + D + " cuesta "
-//                    + min + " y la ruta es " + Ccorto);
-//
-//        } else {
-//            System.out.println("No hay camino de " + O + " a " + D);
-//        }
-//    }
 }
